@@ -26,4 +26,8 @@
   * In Amazon WorkDocs, users get access to shared documents by signing in with a user name and password.
   * **IAM Access Analyzer** - helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity.
     * Access Analyzer analyzes only policies that are applied to resources in the same AWS Region that it's enabled in. To monitor all resources in your AWS environment, you must create an analyzer to enable Access Analyzer in each Region
-  
+ 
+ * **Run cost as architecture fitness function** - https://www.thoughtworks.com/radar/techniques?blipid=1338
+ 
+ * 
+ 
