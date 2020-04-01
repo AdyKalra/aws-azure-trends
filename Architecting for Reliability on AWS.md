@@ -11,9 +11,9 @@
 
 
 * **Identity and Access Management** - is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
- * **Principals** - A person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS.
- * An IAM user doesn't have to represent an actual person; you can create an **IAM user** in order to generate an access key for an application that runs in your corporate network and needs AWS access.
- * **Federating Existing Users** - If the users in your organization already have a way to be authenticated, such as by signing in to your corporate network, you don't have to create separate IAM users for them. Instead, you can federate those user identities into AWS.
-  * If your corporate directory is compatible with Security Assertion Markup Language 2.0 (SAML 2.0), you can configure your corporate directory to provide single-sign on (SSO) access
-  * If you are creating a mobile app or web-based app that can let users identify themselves through an Internet identity provider like Login with Amazon, Facebook, Google, or any OpenID Connect (OIDC) compatible identity provider
-  * If your corporate directory is Microsoft Active Directory, you can use AWS Directory Service
+  * **Principals** - A person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS.
+  * An IAM user doesn't have to represent an actual person; you can create an **IAM user** in order to generate an access key for an application that runs in your corporate network and needs AWS access.
+  * **Federating Existing Users** - If the users in your organization already have a way to be authenticated, such as by signing in to your corporate network, you don't have to create separate IAM users for them. Instead, you can federate those user identities into AWS.
+    * If your corporate directory is compatible with Security Assertion Markup Language 2.0 (SAML 2.0), you can configure your corporate directory to provide single-sign on (SSO) access
+    * If you are creating a mobile app or web-based app that can let users identify themselves through an Internet identity provider like Login with Amazon, Facebook, Google, or any OpenID Connect (OIDC) compatible identity provider
+    * If your corporate directory is Microsoft Active Directory, you can use AWS Directory Service
