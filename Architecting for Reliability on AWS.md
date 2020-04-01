@@ -17,3 +17,13 @@
     * If your corporate directory is compatible with Security Assertion Markup Language 2.0 (SAML 2.0), you can configure your corporate directory to provide single-sign on (SSO) access
     * If you are creating a mobile app or web-based app that can let users identify themselves through an Internet identity provider like Login with Amazon, Facebook, Google, or any OpenID Connect (OIDC) compatible identity provider
     * If your corporate directory is Microsoft Active Directory, you can use AWS Directory Service
+  * **Identity-based policies** control what actions the identity can perform, on which resources, and under what conditions.
+  * **Resource-based policies** control what actions a specified principal can perform on that resource and under what conditions. Resource-based policies are inline policies, and there are no managed resource-based policies
+  * **Attribute-based access control (ABAC)** is an authorization strategy that defines permissions based on attributes. In AWS, these attributes are called **tags**.
+  * In Amazon Elastic Compute Cloud you log into an instance with a key pair (for Linux instances) or using a user name and password (for Microsoft Windows instances).
+  * In Amazon Relational Database Service you log into the database engine with a user name and password that are tied to that database.
+  * In Amazon WorkSpaces, users sign in to a desktop with a user name and password.
+  * In Amazon WorkDocs, users get access to shared documents by signing in with a user name and password.
+  * **AM Access Analyzer** - helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity.
+    * Access Analyzer analyzes only policies that are applied to resources in the same AWS Region that it's enabled in. To monitor all resources in your AWS environment, you must create an analyzer to enable Access Analyzer in each Region
+  
