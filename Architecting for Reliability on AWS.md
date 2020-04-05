@@ -31,20 +31,37 @@
  
   * **AWS Security Token Service (STS)** is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users).
  
- * **IAM Best Practices**
-   * Lock Away Your AWS Account Root User Access Keys
-   * Create Individual IAM Users
-   * Use Groups to Assign Permissions to IAM Users
-   * Grant Least Privilege
-   * Get Started Using Permissions with AWS Managed Policies
-   * Use Customer Managed Policies Instead of Inline Policies
-   * Use Access Levels to Review IAM Permissions
-   * Configure a Strong Password Policy for Your Users
-   * Enable MFA
-   * Use Roles for Applications That Run on Amazon EC2 Instances
-   * Use Roles to Delegate Permissions
-   * Do Not Share Access Keys
-   * Rotate Credentials Regularly
-   * Remove Unnecessary Credentials
-   * Use Policy Conditions for Extra Security
-   * Monitor Activity in Your AWS Account
+  * **IAM Best Practices**
+    * Lock Away Your AWS Account Root User Access Keys
+    * Create Individual IAM Users
+    * Use Groups to Assign Permissions to IAM Users
+    * Grant Least Privilege
+    * Get Started Using Permissions with AWS Managed Policies
+    * Use Customer Managed Policies Instead of Inline Policies
+    * Use Access Levels to Review IAM Permissions
+    * Configure a Strong Password Policy for Your Users
+    * Enable MFA
+    * Use Roles for Applications That Run on Amazon EC2 Instances
+    * Use Roles to Delegate Permissions
+    * Do Not Share Access Keys
+    * Rotate Credentials Regularly
+    * Remove Unnecessary Credentials
+    * Use Policy Conditions for Extra Security
+    * Monitor Activity in Your AWS Account
+
+* **AWS CloudTrail** is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. **Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.**
+ * **Event History** - stores all events for 90 days unless a trail is created and sent to the s3 bucket.
+
+ * Working with CloudTrail Log Files
+   * Create multiple trails per region.
+   * **Monitor CloudTrail log files by sending them to CloudWatch Logs.**
+   * Share log files between accounts.
+   * Use the AWS CloudTrail Processing Library to write log processing applications in Java.
+   * Validate your log files to verify that they have not changed after delivery by CloudTrail.
+   
+ * You can configure your trails to log the following:
+   * **Data events**: These events provide visibility into the resource operations performed on or within a resource. These are also known as data plane operations.
+   * **Management events**: Management events provide visibility into management operations that are performed on resources in your AWS account. These are also known as control plane operations. 
+   * **Insights events**: Insights events capture unusual activity that is detected in your account. If you have Insights events enabled, and CloudTrail detects unusual activity, Insights events are logged to the destination S3 bucket for your trail, but in a different folder. 
+   
+   
