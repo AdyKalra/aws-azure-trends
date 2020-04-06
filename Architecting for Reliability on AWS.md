@@ -64,5 +64,18 @@
      * **Management events**: Management events provide visibility into management operations that are performed on resources in your AWS account. These are also known as control plane operations. 
      * **Insights events**: Insights events capture unusual activity that is detected in your account. If you have Insights events enabled, and CloudTrail detects unusual activity, Insights events are logged to the destination S3 bucket for your trail, but in a different folder. 
    
+* **CloudWatch** monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
+  * create custom dashboards to display metrics about your custom applications, and display custom collections of metrics that you choose.
+  * create alarms which watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached
+  
+  * **Amazon CloudWatch Synthetics** enables you to create canaries to monitor your endpoints and APIs. **Canaries are configurable scripts that follow the same routes and perform the same actions as a customer**. This enables the outside-in view of your customers’ experiences, and your service’s availability from their point of view.
+  
+  * **CloudWatch ServiceLens enhances the observability of your services and applications by enabling you to integrate traces, metrics, logs, and alarms into one place.** ServiceLens integrates **CloudWatch with AWS X-Ray to provide an end-to-end view of your application to help you more efficiently pinpoint performance bottlenecks and identify impacted users.** A **service map** displays your service endpoints and resources as “nodes” and highlights the traffic, latency, and errors for each node and its connections. You can choose a node to see detailed insights about the correlated metrics, logs, and traces associated with that part of the service. This enables you to investigate problems and their effect on the application.
+
+ * **Contributor Insights** to analyze log data and create time series that display contributor data. You can see metrics about the top-N contributors, the total number of unique contributors, and their usage. This helps you find top talkers and understand who or what is impacting system performance. For example, you can find bad hosts, identify the heaviest network users, or find the URLs that generate the most errors.
+ 
+ *  **CloudWatch Container Insights** to collect, aggregate, and summarize metrics and logs from your containerized applications and microservices. Container Insights is available for Amazon Elastic Container Service, Amazon Elastic Kubernetes Service, and Kubernetes platforms on Amazon EC2.
+ 
+
 
    
