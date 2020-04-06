@@ -1,5 +1,5 @@
 ## Architecting for Reliability on AWS
-* AWS Well architected framework 
+### AWS Well architected framework 
   * **CORPS** (Cost optimization , Operational excellence , Reliability , Performance efficiency , Security ) 
   * **Operational Excellence** - The operational excellence pillar focuses on **running and monitoring systems to deliver business value, and continually improving processes and procedures**. Key topics include managing and automating changes, responding to events, and defining standards to successfully manage daily operations.
   * **Security** - The security pillar focuses on **protecting information & systems**. Key topics include confidentiality and integrity of data, identifying and managing who can do what with privilege management, protecting systems, and establishing controls to detect security events.
@@ -10,7 +10,7 @@
 * AWS is called Amazon web services since everything can be accessed using a REST based API 
 
 
-* **Identity and Access Management** - is a web service for **securely controlling access to AWS services**. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access. You use IAM to **control who is authenticated (signed in) and authorized (has permissions) to use resources**.
+### **Identity and Access Management** - is a web service for **securely controlling access to AWS services**. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access. You use IAM to **control who is authenticated (signed in) and authorized (has permissions) to use resources**.
   * **Principals** - A person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS.
   * An IAM user doesn't have to represent an actual person; you can create an **IAM user** in order to generate an access key for an application that runs in your corporate network and needs AWS access.
   * **Federating Existing Users** - If the users in your organization already have a way to be authenticated, such as by signing in to your corporate network, you don't have to create separate IAM users for them. Instead, you can **federate those user identities into AWS.**
@@ -49,7 +49,7 @@
     * Use Policy Conditions for Extra Security
     * Monitor Activity in Your AWS Account
 
-* **AWS CloudTrail** is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. **Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.**
+### **AWS CloudTrail** is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. **Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.**
   * **Event History** - stores all events for 90 days unless a trail is created and sent to the s3 bucket.
 
   * Working with CloudTrail Log Files
@@ -64,7 +64,7 @@
      * **Management events**: Management events provide visibility into management operations that are performed on resources in your AWS account. These are also known as control plane operations. 
      * **Insights events**: Insights events capture unusual activity that is detected in your account. If you have Insights events enabled, and CloudTrail detects unusual activity, Insights events are logged to the destination S3 bucket for your trail, but in a different folder. 
    
-* **CloudWatch** monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
+### **CloudWatch** monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
   * create custom dashboards to display metrics about your custom applications, and display custom collections of metrics that you choose.
   * create alarms which watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached
   
@@ -79,7 +79,7 @@
  * AWS provides two levels of protection against DDoS attacks: **AWS Shield Standard and AWS Shield Advanced**.Is a **managed distributed denial of service(DDOS) protection**. AWS Shield Standard is automatically included at no extra cost beyond what you already pay for AWS WAF and your other AWS services. For added protection against DDoS attacks, AWS offers AWS Shield Advanced. AWS Shield Advanced provides expanded DDoS attack protection for your Amazon EC2 instances, Elastic Load Balancing load balancers, Amazon CloudFront distributions, and Amazon Route 53 hosted zones.
 
 
-* **AWS Config for Change Management** provides a detailed view of the resources associated with your AWS account, including how they are configured, how they are related to one another, and how the configurations and their relationships have changed over time.
+### **AWS Config for Change Management** provides a detailed view of the resources associated with your AWS account, including how they are configured, how they are related to one another, and how the configurations and their relationships have changed over time.
   * **Config rules** which represent your ideal configuration settings. AWS Config provides customizable, predefined rules called **managed rules** to help you get started. You can also create your own custom rules. While AWS Config continuously tracks the configuration changes that occur among your resources, it checks whether these changes violate any of the conditions in your rules. If a resource violates a rule, AWS Config flags the resource and the rule as **noncompliant.**
 
 For example, when an EC2 volume is created, AWS Config can evaluate the volume against a rule that requires volumes to be encrypted. If the volume is not encrypted, AWS Config flags the volume and the rule as noncompliant
@@ -95,9 +95,11 @@ For example, when an EC2 volume is created, AWS Config can evaluate the volume a
     
     * View relationships between resources. For example, you might want to find all resources that use a particular security group.
 
-* **AWS Trusted Advisor** is an online tool that provides you real time guidance to help you provision your resources following AWS best practices. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally.
+### **AWS Trusted Advisor** is an online tool that provides you real time guidance to help you provision your resources following AWS best practices. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally.
   * **Cost Optimization** See how you can save money on AWS by eliminating unused and idle resources or making commitments to reserved capacity
   * **Security** Improve the security of your application by closing gaps, enabling various AWS security features, and examining your permissions.
   * **Fault Tolerance** Increase the availability and redundancy of your AWS application by take advantage of auto scaling, health checks, multi AZ, and backup capabilities.
   * **Performance** Improve the performance of your service by checking your service limits, ensuring you take advantage of provisioned throughput, and monitoring for overutilized instances.
   * **Service Limits** Checks for service usage that is more than 80% of the service limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes.
+
+### 
