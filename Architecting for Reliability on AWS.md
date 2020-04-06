@@ -80,8 +80,11 @@
 
 
 * **AWS Config** provides a detailed view of the resources associated with your AWS account, including how they are configured, how they are related to one another, and how the configurations and their relationships have changed over time.
+  * **Config rules** which represent your ideal configuration settings. AWS Config provides customizable, predefined rules called **managed rules** to help you get started. You can also create your own custom rules. While AWS Config continuously tracks the configuration changes that occur among your resources, it checks whether these changes violate any of the conditions in your rules. If a resource violates a rule, AWS Config flags the resource and the rule as **noncompliant.**
+
+For example, when an EC2 volume is created, AWS Config can evaluate the volume against a rule that requires volumes to be encrypted. If the volume is not encrypted, AWS Config flags the volume and the rule as noncompliant
   * **AWS Config uses Amazon Simple Notification Service (SNS) topics to send you notifications every time a supported AWS resource** is created, updated, or otherwise modified as a result of user API activity. 
-  * **f you want to programmatically consume the data from AWS Config in these or other ways, use an Amazon Simple Queue Service queue as the notification endpoint for Amazon SNS.**
+  * **If you want to programmatically consume the data from AWS Config in these or other ways, use an Amazon Simple Queue Service queue as the notification endpoint for Amazon SNS.**
 
   * With AWS Config, you can do the following:
     * Evaluate your AWS resource configurations for desired settings.
@@ -92,3 +95,9 @@
     
     * View relationships between resources. For example, you might want to find all resources that use a particular security group.
 
+* **AWS Trusted Advisor** is an online tool that provides you real time guidance to help you provision your resources following AWS best practices. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally.
+  * **Cost Optimization** See how you can save money on AWS by eliminating unused and idle resources or making commitments to reserved capacity
+  * **Security** Improve the security of your application by closing gaps, enabling various AWS security features, and examining your permissions.
+  * **Fault Tolerance** Increase the availability and redundancy of your AWS application by take advantage of auto scaling, health checks, multi AZ, and backup capabilities.
+  * **Performance** Improve the performance of your service by checking your service limits, ensuring you take advantage of provisioned throughput, and monitoring for overutilized instances.
+  * **Service Limits** Checks for service usage that is more than 80% of the service limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes.
