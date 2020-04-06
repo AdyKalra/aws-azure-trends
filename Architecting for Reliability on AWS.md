@@ -78,6 +78,17 @@
   
  * AWS provides two levels of protection against DDoS attacks: **AWS Shield Standard and AWS Shield Advanced**.Is a **managed distributed denial of service(DDOS) protection**. AWS Shield Standard is automatically included at no extra cost beyond what you already pay for AWS WAF and your other AWS services. For added protection against DDoS attacks, AWS offers AWS Shield Advanced. AWS Shield Advanced provides expanded DDoS attack protection for your Amazon EC2 instances, Elastic Load Balancing load balancers, Amazon CloudFront distributions, and Amazon Route 53 hosted zones.
 
- 
 
-   
+* **AWS Config** provides a detailed view of the resources associated with your AWS account, including how they are configured, how they are related to one another, and how the configurations and their relationships have changed over time.
+  * **AWS Config uses Amazon Simple Notification Service (SNS) topics to send you notifications every time a supported AWS resource** is created, updated, or otherwise modified as a result of user API activity. 
+  * **f you want to programmatically consume the data from AWS Config in these or other ways, use an Amazon Simple Queue Service queue as the notification endpoint for Amazon SNS.**
+
+  * With AWS Config, you can do the following:
+    * Evaluate your AWS resource configurations for desired settings.
+    * Get a snapshot of the current configurations of the supported resources that are associated with your AWS account.
+    * Retrieve configurations of one or more resources that exist in your account.
+    * Retrieve historical configurations of one or more resources.
+    * Receive a notification whenever a resource is created, modified, or deleted.
+    
+    * View relationships between resources. For example, you might want to find all resources that use a particular security group.
+
