@@ -162,3 +162,16 @@ is increasing the size and computing power of a single instance or node without 
 ### **Horizontal Scaling** add more instances of similar type 
  involves adding more processing units or phyiscal machines to your server or database. It involves growing the number of nodes in the cluster, reducing the responsibilities of each member node by spreading the key space wider and providing additional end-points for client connections.
  
+## Architecting with Services Instead of Servers
+ * **Managed services** - is a set of services and tools that automate infrastructure management tasks for Amazon Web Services (AWS) deployments. 
+   * RDS
+   * S3
+   * DynamoDB
+   * ELB
+ *  key benefits of managed services include:
+   * Proactive infrastructure management. To get the most out of AWS, you need to be an expert at AWS. ...
+   * Ongoing business evolution support. The cloud thrives on change. ...
+   * Cloud operations management. ...
+   * Contractual agreements that structure responsibilities.
+ * **Serverless Architecture** is a way to build and run applications and services without having to manage infrastructure. ... You no longer have to provision, scale, and maintain servers to run your applications, databases, and storage systems.
+   * Lambda - > API gateway to run them over http -> S3 for content -> Cloudfront as a cdn with multiple edge locations
