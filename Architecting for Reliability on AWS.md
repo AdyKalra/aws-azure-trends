@@ -1,5 +1,5 @@
-## Architecting for Reliability on AWS
-### AWS Well architected framework 
+# Architecting for Reliability on AWS
+## AWS Well architected framework 
   * **CORPS** (Cost optimization , Operational excellence , Reliability , Performance efficiency , Security ) 
   * **Operational Excellence** - The operational excellence pillar focuses on **running and monitoring systems to deliver business value, and continually improving processes and procedures**. Key topics include managing and automating changes, responding to events, and defining standards to successfully manage daily operations.
   * **Security** - The security pillar focuses on **protecting information & systems**. Key topics include confidentiality and integrity of data, identifying and managing who can do what with privilege management, protecting systems, and establishing controls to detect security events.
@@ -10,7 +10,7 @@
 * AWS is called Amazon web services since everything can be accessed using a REST based API 
 
 
-### **Identity and Access Management** 
+## **Identity and Access Management** 
 - is a web service for **securely controlling access to AWS services**. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access. You use IAM to **control who is authenticated (signed in) and authorized (has permissions) to use resources**.
   * **Principals** - A person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS.
   * An IAM user doesn't have to represent an actual person; you can create an **IAM user** in order to generate an access key for an application that runs in your corporate network and needs AWS access.
@@ -50,7 +50,7 @@
     * Use Policy Conditions for Extra Security
     * Monitor Activity in Your AWS Account
 
-### **AWS CloudTrail** 
+## **AWS CloudTrail** 
 is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. **Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.**
   * **Event History** - stores all events for 90 days unless a trail is created and sent to the s3 bucket.
 
@@ -66,7 +66,7 @@ is an AWS service that helps you enable governance, compliance, and operational 
      * **Management events**: Management events provide visibility into management operations that are performed on resources in your AWS account. These are also known as control plane operations. 
      * **Insights events**: Insights events capture unusual activity that is detected in your account. If you have Insights events enabled, and CloudTrail detects unusual activity, Insights events are logged to the destination S3 bucket for your trail, but in a different folder. 
    
-### **CloudWatch** 
+## **CloudWatch** 
 monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
   * create custom dashboards to display metrics about your custom applications, and display custom collections of metrics that you choose.
   * create alarms which watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached
@@ -99,7 +99,7 @@ For example, when an EC2 volume is created, AWS Config can evaluate the volume a
     
     * View relationships between resources. For example, you might want to find all resources that use a particular security group.
 
-### **AWS Trusted Advisor** 
+## **AWS Trusted Advisor** 
 is an online tool that provides you real time guidance to help you provision your resources following AWS best practices. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally.
   * **Cost Optimization** See how you can save money on AWS by eliminating unused and idle resources or making commitments to reserved capacity
   * **Security** Improve the security of your application by closing gaps, enabling various AWS security features, and examining your permissions.
@@ -107,4 +107,36 @@ is an online tool that provides you real time guidance to help you provision you
   * **Performance** Improve the performance of your service by checking your service limits, ensuring you take advantage of provisioned throughput, and monitoring for overutilized instances.
   * **Service Limits** Checks for service usage that is more than 80% of the service limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes.
 
-### 
+# Architecting for availability and Fault Tolerance
+
+### ** Availability zones and regions**
+
+## EC2 Instances - Launching an EC2 Instance into an Availability Zone
+**Amazon Elastic Compute Cloud (Amazon EC2)** provides scalable computing capacity in the Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster.
+ * You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. 
+ * EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
+ 
+### **Amazon EC2 provides the following features:**
+
+ * Virtual computing environments, known as **instances**
+ * Preconfigured templates for your instances, known as **Amazon Machine Images (AMIs)**, that package the bits you need for your server (including the operating system and additional software)
+ * Various configurations of CPU, memory, storage, and networking capacity for your instances, known as **instance types**
+ * Secure login information for your instances using key pairs (AWS stores the public key, and you store the private key in a secure place)
+ * Storage volumes for temporary data that's deleted when you stop or terminate your instance, known as instance **store volumes**
+ * Persistent storage volumes for your data using Amazon Elastic Block Store (Amazon EBS), known as **Amazon EBS volumes*
+ * Multiple physical locations for your resources, such as instances and Amazon EBS volumes, known as **Regions and Availability Zones**
+ * A firewall that enables you to specify the protocols, ports, and source IP ranges that can reach your instances using security groups
+ * Static IPv4 addresses for dynamic cloud computing, known as **Elastic IP addresses**
+ * Metadata, known as **tags**, that you can create and assign to your Amazon EC2 resources
+ * Virtual networks you can create that are logically isolated from the rest of the AWS cloud, and that you can optionally connect to your own network, known as **virtual private clouds (VPCs)**
+ 
+### Best practices for Windows on Amazon EC2
+* Update Windows drivers
+  * Leverage Trusted Advisor to keep Amazon EC2 Windows up to date with AWS-provided Windows drivers.
+  * Use SNS topics to receive updates for new driver releases.
+  * Use the AWS Systems Manager SSM document AWSSupport-UpgradeWindowsAWSDrivers to easily apply the updates across your instances.
+* Launch new instances with the latest Windows AMIs
+* Test system/application performance before migration
+* Update launch agents
+* Use separate Amazon EBS volumes for the operating system versus your data. Ensure that the volume with your data persists after instance termination
+ 
