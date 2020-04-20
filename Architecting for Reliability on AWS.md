@@ -151,3 +151,14 @@ helps you ensure that you have the correct number of Amazon EC2 instances availa
  
 ### **VM Import/Export**
  * VM Import/Export enables you to import virtual machine (VM) images from your existing virtualization environment to Amazon EC2, and then export them back. This enables you to migrate applications and workloads to Amazon EC2, copy your VM image catalog to Amazon EC2, or create a repository of VM images for backup and disaster recovery.
+
+### **Active Redundancy**
+ * Load balancer managing servers between multiple availability zones.
+### **Standby Redundancy**
+ * Master DB in one of the AZs and Backup / standby DB with synchronous / asynchronous updates in another AZ
+ 
+### **Vertical Scaling** small to large instance type
+is increasing the size and computing power of a single instance or node without increasing the number of nodes or instances
+### **Horizontal Scaling** add more instances of similar type 
+ involves adding more processing units or phyiscal machines to your server or database. It involves growing the number of nodes in the cluster, reducing the responsibilities of each member node by spreading the key space wider and providing additional end-points for client connections.
+ 
