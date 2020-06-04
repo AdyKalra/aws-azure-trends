@@ -122,7 +122,7 @@
 
 * For example, you can create a straightforward and basic functionality which will call a Lambda function in response to the given voice command.
 
-Examples of Custom Alexa Skills with AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Examples-of-Custom-Alexa-Skills-with-AWS-Lambda.png)
+![Examples of Custom Alexa Skills with AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Examples-of-Custom-Alexa-Skills-with-AWS-Lambda.png)
 
 * Custom Alexa Skill Set: This is an object embedded inside AWS Console which invokes your handler function in response to the voice command from the Alexa enabled devices.
 * Alexa Skill Handler Function: This is an AWS Lambda function which provides us with the custom logic that we want our command to execute. This handles the task of fulfilling the user’s request.
@@ -136,38 +136,40 @@ Examples of Custom Alexa Skills with AWS Lambda](https://www.simform.com/wp-cont
 * Need some more inspiration? Check out this list of 50 most useful Alexa Skills.
 
 # 7. Automated Stored Procedures using AWS Lambda
-To derive multiple formats of data, sometimes users need to do compute work. This compute work is based on the data which is being inserted, updated or deleted to the database. However, oftentimes they do not want the compute work to be done on the compute resources but on the database itself.
+* To derive multiple formats of data, sometimes users need to do compute work. This compute work is based on the data which is being inserted, updated or deleted to the database. However, oftentimes they do not want the compute work to be done on the compute resources but on the database itself.
 
-Amazon Aurora MySQL has the ability to invoke Lambda as a “storage/stored procedure”. This functionality triggers the function before/after some operations of interest are performed on the particular database table.
+* Amazon Aurora MySQL has the ability to invoke Lambda as a “storage/stored procedure”. This functionality triggers the function before/after some operations of interest are performed on the particular database table.
 
-This ability of Lambda has reinvented the old methods of stored procedures to new methods which are higher and greater in the velocity.
+* This ability of Lambda has reinvented the old methods of stored procedures to new methods which are higher and greater in the velocity.
 
-Automated Stored Procedures using AWS Lambda
+![Automated Stored Procedures using AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Automated-Stored-Procedures-using-AWS-Lambda-2.png)
 
-This could be very useful for databases having high velocities or high traffic where traditional stored procedures have become a pain point in terms of consuming CPU resources from the other capabilities of the database. You can take this use case to invoke Lambda for whatever your requirements be.
+* This could be very useful for databases having high velocities or high traffic where traditional stored procedures have become a pain point in terms of consuming CPU resources from the other capabilities of the database. You can take this use case to invoke Lambda for whatever your requirements be.
 
-This mechanism helps you wire other services of AWS with your Aurora database. Here are some of the things you can do:
+### This mechanism helps you wire other services of AWS with your Aurora database. Here are some of the things you can do:
 
-Send an email using SES
-Issue a notification using SNS
-Insert publish metrics to CloudWatch
-Update a DynamoDB table
-On the application level, you can now do the following things:
+* Send an email using SES
+* Issue a notification using SNS
+* Insert publish metrics to CloudWatch
+* Update a DynamoDB table
 
-Implement complex ETL & workflows
-Track & audit actions on database tables
-Perform advance performance monitoring & analysis
-Combining AWS Lambda example with Amazon RedShift (Data Warehouse)
+### On the application level, you can now do the following things:
 
-Amazon RedShift has the number of different ways for which it creates events along with AWS Lambda, for example, when you want to create replicas, do snapshots, backups or create an event to which SNS topic is subscribed to.
+* Implement complex ETL & workflows
+* Track & audit actions on database tables
+* Perform advance performance monitoring & analysis
+* Combining AWS Lambda example with Amazon RedShift (Data Warehouse)
 
-This SNS topic subsequently invokes Lambda which can be useful for things like:
+* **Amazon RedShift** has the number of different ways for which it creates events along with AWS Lambda, for example, when you want to create replicas, do snapshots, backups or create an event to which SNS topic is subscribed to.
 
-Single region multiple copies
-Creating multiple copies of redshift clusters
-Responding to failures/incidents
-Number of automotive capabilities
-#8. Serverless Image Recognition Engine
+* This SNS topic subsequently invokes Lambda which can be useful for things like:
+
+  * Single region multiple copies
+  * Creating multiple copies of redshift clusters
+  * Responding to failures/incidents
+  * Number of automotive capabilities
+
+# 8. Serverless Image Recognition Engine
 Imagine you have a website where people can upload images. As soon as the images are uploaded, you want the images to go through a set of workflow actions.
 
 For example, a workflow where a user uploads an image which is stored in the S3 bucket triggers a Lambda function 1. This function invokes the state function workflow, as shown in the image.
