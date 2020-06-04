@@ -114,28 +114,28 @@
 * For this, whenever new books are added to the database, an AWS Lambda function will trigger which will notify SNS. This, in turn, will send mass emails to the students.
 
 # 6. AWS Lambda Example showing Custom Alexa Skills
-Most of us are familiar with Alexa, popularized with Amazon’s multiple lines of Echo smart speakers and devices.
+* Most of us are familiar with Alexa, popularized with Amazon’s multiple lines of Echo smart speakers and devices.
 
-We are accustomed to using voice-enabled searches and interacting with voice assistants in-built in our smartphones.
+* We are accustomed to using voice-enabled searches and interacting with voice assistants in-built in our smartphones.
 
-One such AWS Lambda example is Alexa. This comes with a predefined set of functionalities (called skills) which are used for the voice interface. For voice interaction, Alexa processes the natural language into a programmatic action.
+* One such AWS Lambda example is Alexa. This comes with a predefined set of functionalities (called skills) which are used for the voice interface. For voice interaction, Alexa processes the natural language into a programmatic action.
 
-For example, you can create a straightforward and basic functionality which will call a Lambda function in response to the given voice command.
+* For example, you can create a straightforward and basic functionality which will call a Lambda function in response to the given voice command.
 
-Examples of Custom Alexa Skills with AWS Lambda
+Examples of Custom Alexa Skills with AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Examples-of-Custom-Alexa-Skills-with-AWS-Lambda.png)
 
-Custom Alexa Skill Set: This is an object embedded inside AWS Console which invokes your handler function in response to the voice command from the Alexa enabled devices.
-Alexa Skill Handler Function: This is an AWS Lambda function which provides us with the custom logic that we want our command to execute. This handles the task of fulfilling the user’s request.
-Third Party Functions: These functions are hosted outside of the Alexa skill. These provide us with the functionality of interfacing with the 3rd party services like interacting with a Database, call to a 3rd party services, etc.
-Some of the Alexa skills that you can write for yourself are:
+* Custom Alexa Skill Set: This is an object embedded inside AWS Console which invokes your handler function in response to the voice command from the Alexa enabled devices.
+* Alexa Skill Handler Function: This is an AWS Lambda function which provides us with the custom logic that we want our command to execute. This handles the task of fulfilling the user’s request.
+* Third Party Functions: These functions are hosted outside of the Alexa skill. These provide us with the functionality of interfacing with the 3rd party services like interacting with a Database, call to a 3rd party services, etc.
+* Some of the Alexa skills that you can write for yourself are:
 
-Adding a meeting to the calendar
-Finding out the nearest coffee shop
-Create a reminder
-Playing the music
-Need some more inspiration? Check out this list of 50 most useful Alexa Skills.
+* Adding a meeting to the calendar
+* Finding out the nearest coffee shop
+* Create a reminder
+* Playing the music
+* Need some more inspiration? Check out this list of 50 most useful Alexa Skills.
 
-#7. Automated Stored Procedures using AWS Lambda
+# 7. Automated Stored Procedures using AWS Lambda
 To derive multiple formats of data, sometimes users need to do compute work. This compute work is based on the data which is being inserted, updated or deleted to the database. However, oftentimes they do not want the compute work to be done on the compute resources but on the database itself.
 
 Amazon Aurora MySQL has the ability to invoke Lambda as a “storage/stored procedure”. This functionality triggers the function before/after some operations of interest are performed on the particular database table.
