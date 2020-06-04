@@ -170,50 +170,52 @@
   * Number of automotive capabilities
 
 # 8. Serverless Image Recognition Engine
-Imagine you have a website where people can upload images. As soon as the images are uploaded, you want the images to go through a set of workflow actions.
+* Imagine you have a website where people can upload images. As soon as the images are uploaded, you want the images to go through a set of workflow actions.
 
-For example, a workflow where a user uploads an image which is stored in the S3 bucket triggers a Lambda function 1. This function invokes the state function workflow, as shown in the image.
+* For example, a workflow where a user uploads an image which is stored in the S3 bucket triggers a Lambda function 1. This function invokes the state function workflow, as shown in the image.
 
-Serverless Image Recognition Engine
-Source: AWS re:Invent 2017
-This step function workflow orchestrates the job of multiple Lambda functions. The first thing it does it to extract the metadata from the image, for example, image type information. Meanwhile, another three lambda functions are invoked in parallel.
+![Serverless Image Recognition Engine](https://www.simform.com/wp-content/uploads/2018/08/Serverless-Image-Recognition-Engine-1.png)
 
-Lambda function 2 is invoked to extract the image metadata
-Lambda function 3 invokes the Rekognition which finds out the object in the image
-Lambda function 4 is invoked to generate an image thumbnail
-Lambda function 5 writes all this information back into the DynamoDB
-End result: Whenever the page refreshes after the user has uploaded the image, they see all the metadata, thumbnail and the object tagged that are evident in the image. This is an example of an image processing pattern and can extend it as per your custom requirements.
+* This step function workflow orchestrates the job of multiple Lambda functions. The first thing it does it to extract the metadata from the image, for example, image type information. Meanwhile, another three lambda functions are invoked in parallel.
 
-NatGeo Example: As they were moving towards a larger platform, they found out that they have a lot of metadata about the text content but the images didn’t really have a lot of metadata and that was affecting how they were surfacing content which isn’t tied to the text.
+ * Lambda function 2 is invoked to extract the image metadata
+ * Lambda function 3 invokes the Rekognition which finds out the object in the image
+ * Lambda function 4 is invoked to generate an image thumbnail
+ * Lambda function 5 writes all this information back into the DynamoDB
+* End result: Whenever the page refreshes after the user has uploaded the image, they see all the metadata, thumbnail and the object tagged that are evident in the image. This is an example of an image processing pattern and can extend it as per your custom requirements.
 
-This was important since they were trying to showcase images and videos and not just magazines articles.
+* NatGeo Example: As they were moving towards a larger platform, they found out that they have a lot of metadata about the text content but the images didn’t really have a lot of metadata and that was affecting how they were surfacing content which isn’t tied to the text.
 
-Using AWS Lambda example and Rekognition helped them in two ways:
+* This was important since they were trying to showcase images and videos and not just magazines articles.
 
-Personalizing not just the content but images as well
-Cropping mechanism where the system identifies the focal point and crops automatically
-#9 Serverless Text-to-Speech Example
-With the advent of AI enabled devices, text-to-speech has become imperative for modern applications. Medium being the latest one in facilitating TTS functionality. More to that, speech synthesis is a tricky subject and the list of interpretation challenges is endless.
+* Using AWS Lambda example and Rekognition helped them in two ways:
 
-With AWS Lambda & Amazon Polly, you can harness the power of lifelike speech synthesis application. Amazon Polly uses advance deep learning technologies to synthesize speech that resembles the human voice.
+* Personalizing not just the content but images as well
+* Cropping mechanism where the system identifies the focal point and crops automatically
 
-AWS Lambda here enables Polly to work with faster response times which is critical for real-time and interactive dialogue.
+# 9 Serverless Text-to-Speech Example
+* With the advent of AI enabled devices, text-to-speech has become imperative for modern applications. Medium being the latest one in facilitating TTS functionality. More to that, speech synthesis is a tricky subject and the list of interpretation challenges is endless.
 
-Here’s an application architecture of our sample application which converts a text module into an MP3 file. To run the application asynchronously, SNS is used to receive information and convert the files simultaneously.
+* With AWS Lambda & Amazon Polly, you can harness the power of lifelike speech synthesis application. Amazon Polly uses advance deep learning technologies to synthesize speech that resembles the human voice.
 
-This uses two methods where AWS Lambda along with API Gateway as a RESTful web service:
+* AWS Lambda here enables Polly to work with faster response times which is critical for real-time and interactive dialogue.
 
-Lambda 1: Initially for sending out the notification about a new post which is to be converted into an MP3 file.
-Lambda 2: For retrieving information about the post which includes a URL of the MP3 file stored in the S3 bucket.
-Serverless Text-to-Speech Example
+* Here’s an application architecture of our sample application which converts a text module into an MP3 file. To run the application asynchronously, SNS is used to receive information and convert the files simultaneously.
 
-How does it work?
+* This uses two methods where AWS Lambda along with API Gateway as a RESTful web service:
 
-Whenever a new post is added to the S3 bucket, a dedicated API Gateway triggers a Lambda function 1 which initializes the process of MP3 file generation.
-Lambda function 1 stores the copy of the information in DynamoDB where information about all posts is stored.
-Meanwhile, Lambda function 1 is publishing a message to SNS which trigger Lambda function 2. This function along with Amazon Polly converts the text into the audio in the same language as the text.
-After that, an MP3 file is stored in the S3 bucket with the reference URL and the information about the same will be stored in the DynamoDB.
-#10 Personalized Content Delivery through AWS Lambda
+ * Lambda 1: Initially for sending out the notification about a new post which is to be converted into an MP3 file.
+ * Lambda 2: For retrieving information about the post which includes a URL of the MP3 file stored in the S3 bucket.
+![Serverless Text-to-Speech Example](https://www.simform.com/wp-content/uploads/2018/08/Serverless-Text-to-Speech-Example.png)
+
+### How does it work?
+
+* Whenever a new post is added to the S3 bucket, a dedicated API Gateway triggers a Lambda function 1 which initializes the process of MP3 file generation.
+* Lambda function 1 stores the copy of the information in DynamoDB where information about all posts is stored.
+* Meanwhile, Lambda function 1 is publishing a message to SNS which trigger Lambda function 2. This function along with Amazon Polly converts the text into the audio in the same language as the text.
+* After that, an MP3 file is stored in the S3 bucket with the reference URL and the information about the same will be stored in the DynamoDB.
+
+# 10 Personalized Content Delivery through AWS Lambda
 Today most of the application facilitates the personalized content and news feed. This is possible because the personalized user experience is becoming an inevitable feature and accessing & monitoring of user touch points is becoming easy.
 
 However, setting up and managing a complex architecture isn’t a requirement. AWS Lambda has made it possible to get started easily with a personalized content platform with the possibility to make changes on the go. Let’s take an example of our reference architecture.
