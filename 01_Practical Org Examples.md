@@ -216,23 +216,23 @@
 * After that, an MP3 file is stored in the S3 bucket with the reference URL and the information about the same will be stored in the DynamoDB.
 
 # 10 Personalized Content Delivery through AWS Lambda
-Today most of the application facilitates the personalized content and news feed. This is possible because the personalized user experience is becoming an inevitable feature and accessing & monitoring of user touch points is becoming easy.
+* Today most of the application facilitates the personalized content and news feed. This is possible because the personalized user experience is becoming an inevitable feature and accessing & monitoring of user touch points is becoming easy.
 
-However, setting up and managing a complex architecture isn’t a requirement. AWS Lambda has made it possible to get started easily with a personalized content platform with the possibility to make changes on the go. Let’s take an example of our reference architecture.
+* However, setting up and managing a complex architecture isn’t a requirement. AWS Lambda has made it possible to get started easily with a personalized content platform with the possibility to make changes on the go. Let’s take an example of our reference architecture.
 
-Here all the information extracted from users touch points is stored in the DynamoDB. With the help of Lambda function processed in the backend, it creates the user’s profile and a custom feed based upon various parameters.
+* Here all the information extracted from users touch points is stored in the DynamoDB. With the help of Lambda function processed in the backend, it creates the user’s profile and a custom feed based upon various parameters.
 
-This personalised feed aggregates the content from multiple places
+* This personalised feed aggregates the content from multiple places
 
-Personalized Content Delivery through AWS Lambda
-Source: AWS re:Invent 2017
-Aggregate the content, normalize it and then prepares it for the delivery. Lambda function 1 is used to communicate with Rekognition where it classifies the image, gives the proper meta tags, resizes it according to the device and so on.
+![Personalized Content Delivery through AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Personalized-Content-Delivery-through-AWS-Lambda.png)
 
-Personalized Content Delivery through AWS Lambda
-Source: AWS re:Invent 2017
-This second part which facilitates the content personalization is mostly powered by the API Gateway and Lambda functions.
+* Aggregate the content, normalize it and then prepares it for the delivery. Lambda function 1 is used to communicate with Rekognition where it classifies the image, gives the proper meta tags, resizes it according to the device and so on.
 
-Content API: The primary source of the feed is CloudSearch where the aggregated content is stored for the Content API to communicate.
-User API: This keeps track of what users are browsing in the application, monitors their activity with respect to time.
-Read/Write API: This is mostly pushing back and forth the data gathered into the DynamoDB
-Admin API: This is for the editors to manage things manually from the backend, for example, change the tagging, turn off if it’s unsuitable for the students, etc.
+![Personalized Content Delivery through AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Personalized-Content-Delivery-through-AWS-Lambda-2.png)
+
+* This second part which facilitates the content personalization is mostly powered by the API Gateway and Lambda functions.
+
+ * Content API: The primary source of the feed is CloudSearch where the aggregated content is stored for the Content API to communicate.
+ * User API: This keeps track of what users are browsing in the application, monitors their activity with respect to time.
+ * Read/Write API: This is mostly pushing back and forth the data gathered into the DynamoDB
+ * Admin API: This is for the editors to manage things manually from the backend, for example, change the tagging, turn off if it’s unsuitable for the students, etc.
