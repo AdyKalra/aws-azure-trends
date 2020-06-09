@@ -5,6 +5,11 @@
 | [Lambda Example showing Media Transformation](#aws-lambda-example-showing-media-transformation) | S3 APIG λ	| multi-platform media, content delivery pipeline, on-demand image resizing|
 |[Deriving Multiple Data Format from Single Source](#deriving-multiple-data-format-from-single-source) | S3 SNS λ | event-driven system, Processing data logs to produce multiple result derivatives, convert media to multiple formats |
 |[Real-Time Data Processing Example using AWS Lambda](#real-time-data-processing-example-using-aws-lambda) | Kinesis λ |λ polls kinesis streams, one Lambda function is invoked every 200ms per shard, Website clickstream, Payment transactions, IT logs, Location-based tracking, **Stream-based model (event source mapping)**, Event structure model(batch async) |
+|[Custom Logic Workflows using AWS Lambda](#custom-logic-workflows-using-aws-lambda) | SNS StepFunctions λ | complex repeatable scenarios, Customer onboarding, shopping Cart Management, Drip Marketing, Loyalty programmes |
+|[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
@@ -91,10 +96,11 @@
 
 * As shown in the image, you can apply custom logic before you invoke your subsequent functions, for example, delay of 10 seconds. Some of the potential scenarios where you can use Step Functions and Lambda are:
 
-* Customer onboarding
-* Shopping Cart Management
-* Drip Marketing
-* Loyalty programmes
+  * Customer onboarding
+  * Shopping Cart Management
+  * Drip Marketing
+  * Loyalty programmes
+ 
 * For Coke Vending Pass Program, developers used a combination of SNS and Lambda. But eventually, it was slow to react and prolonged timing dependencies. This lead to confusing updates to the vending machine. As a potential solution, 90 seconds of time delay would work fine and hence they added a delay to the first Lambda function.
 
 * As you might have guessed it, this increased the execution time of the function which resulted in an increased bill. In order to make this solution more cost-effective, they turned to Step Functions to coordinate their components of microservice at scale.
