@@ -7,9 +7,9 @@
 |[Real-Time Data Processing Example using AWS Lambda](#real-time-data-processing-example-using-aws-lambda) | Kinesis λ |λ polls kinesis streams, one Lambda function is invoked every 200ms per shard, Website clickstream, Payment transactions, IT logs, Location-based tracking, **Stream-based model (event source mapping)**, Event structure model(batch async) |
 |[Custom Logic Workflows using AWS Lambda](#custom-logic-workflows-using-aws-lambda) | SNS StepFunctions λ | complex repeatable scenarios, Customer onboarding, shopping Cart Management, Drip Marketing, Loyalty programmes |
 |[Change Data Capture with AWS Lambda](#change-data-capture-with-aws-lambda) | DynamoDB Streams λ SNS DynamoDB Cloudwatch | analyze and keep track of the changes made in the database, eventual consistency, Cross Region Replication, Filtering, Monitoring, Auditing, Notifications  |
-|[]() | S3 SNS λ |  |
-|[]() | S3 SNS λ |  |
-|[]() | S3 SNS λ |  |
+|[AWS Lambda Example showing Custom Alexa Skills](#aws-lambda-example-showing-custom-alexa-skills) | Alexa skill λ | Adding a meeting to the calendar, Finding out the nearest coffee shop, Create a reminder, Playing the music |
+|[Automated Stored Procedures using AWS Lambda](#automated-stored-procedures-using-aws-lambda) | Aurora λ SES SNS CloudWatch DynamoDB | traditional stored procedures have become a pain point in terms of consuming CPU resources, Send an email using SES,Issue a notification using SNS, Insert publish metrics to CloudWatch, Update a DynamoDB table, Implement complex ETL & workflows  |
+|[Combining AWS Lambda example with Amazon RedShift (Data Warehouse)](#on-the-application-level-you-can-now-do-the-following-things) | λ Redshift SNS | ETL , Single region multiple copies, Creating multiple copies of redshift clusters, Responding to failures/incidents |
 |[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
