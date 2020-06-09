@@ -6,3 +6,4 @@ Cattle or crickets? You decide!  |  https://servers.lol  |
 |AWS Service Health Dashboard | https://status.aws.amazon.com/#AP_block |
 |AWS Diagrams native | https://aws.amazon.com/architecture/icons/ |
 |AWS Diagrams online | https://app.cloudcraft.co/ |
+|AWS notes represented in diagrams|https://www.awsgeek.com/|
