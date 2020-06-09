@@ -13,7 +13,8 @@
 |[Serverless Image Recognition Engine](#serverless-image-recognition-engine) | Cognito λ StepFunctions Rekognition DynamoDB | Personalizing not just the content but images  |
 |[Serverless Text-to-Speech](#serverless-text-to-speech-example) | APIG S3 DynamoDB SNS Polly| Amazon Polly converts the text into the audio in the same language as the text |
 |[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
-|[]() | S3 SNS λ |  |
+|[Lambda Architecture for
+Batch and Stream Processing]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
 # AWS Lambda Example showing Media Transformation
@@ -273,5 +274,13 @@
  * User API: This keeps track of what users are browsing in the application, monitors their activity with respect to time.
  * Read/Write API: This is mostly pushing back and forth the data gathered into the DynamoDB
  * Admin API: This is for the editors to manage things manually from the backend, for example, change the tagging, turn off if it’s unsuitable for the students, etc.
+
+[Back to top :arrow_up:](#OrgExamples)
+
+# Lambda Architecture for Batch and Stream Processing
+
+* The AWS services frequently used to analyze large volumes of data are Amazon EMR and Amazon Athena. 
+* For ingesting and processing stream or real-time data, AWS services like Amazon Kinesis Data Streams, Amazon Kinesis Data Firehose, Amazon Kinesis Data Analytics,Spark Streaming and Spark SQL on top of an Amazon EMR cluster are widely used. 
+* Amazon Simple Storage Service (Amazon S3) forms the backbone of such architectures providing the persistent object storage layer for the AWS compute service.
 
 [Back to top :arrow_up:](#OrgExamples)
