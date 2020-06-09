@@ -6,7 +6,7 @@
 |[Deriving Multiple Data Format from Single Source](#deriving-multiple-data-format-from-single-source) | S3 SNS λ | event-driven system, Processing data logs to produce multiple result derivatives, convert media to multiple formats |
 |[Real-Time Data Processing Example using AWS Lambda](#real-time-data-processing-example-using-aws-lambda) | Kinesis λ |λ polls kinesis streams, one Lambda function is invoked every 200ms per shard, Website clickstream, Payment transactions, IT logs, Location-based tracking, **Stream-based model (event source mapping)**, Event structure model(batch async) |
 |[Custom Logic Workflows using AWS Lambda](#custom-logic-workflows-using-aws-lambda) | SNS StepFunctions λ | complex repeatable scenarios, Customer onboarding, shopping Cart Management, Drip Marketing, Loyalty programmes |
-|[]() | S3 SNS λ |  |
+|[Change Data Capture with AWS Lambda](#change-data-capture-with-aws-lambda) | DynamoDB Streams λ SNS DynamoDB Cloudwatch | analyze and keep track of the changes made in the database, eventual consistency, Cross Region Replication, Filtering, Monitoring, Auditing, Notifications  |
 |[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
@@ -122,11 +122,11 @@
 
 * DynamoDB streams with AWS Lambda can also be used for enabling multiple workflows. Some of them are:
 
-* Cross Region Replication
-* Filtering
-* Monitoring
-* Auditing
-* Notifications
+  * Cross Region Replication
+  * Filtering
+  * Monitoring
+  * Auditing
+  * Notifications
 * For example, cross-region replication is highly useful when you want to run real-time applications in parallel. Mapbox serves maps to almost 100 million unique users every month across the world. To reduce the speed at which the maps are delivered and rendered, they turned to cross-region replication using DynamoDB and AWS Lambda. More information can be found here.
 
 * Similarly, Netflix also uses AWS Lambda to update its offshore databases whenever new files are uploaded. This way, all their databases are kept updated.
