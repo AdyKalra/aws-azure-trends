@@ -13,8 +13,7 @@
 |[Serverless Image Recognition Engine](#serverless-image-recognition-engine) | Cognito λ StepFunctions Rekognition DynamoDB | Personalizing not just the content but images  |
 |[Serverless Text-to-Speech](#serverless-text-to-speech-example) | APIG S3 DynamoDB SNS Polly| Amazon Polly converts the text into the audio in the same language as the text |
 |[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
-|[Lambda Architecture for
-Batch and Stream Processing]() | S3 SNS λ |  |
+|[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
 # AWS Lambda Example showing Media Transformation
@@ -282,5 +281,21 @@ Batch and Stream Processing]() | S3 SNS λ |  |
 * The AWS services frequently used to analyze large volumes of data are Amazon EMR and Amazon Athena. 
 * For ingesting and processing stream or real-time data, AWS services like Amazon Kinesis Data Streams, Amazon Kinesis Data Firehose, Amazon Kinesis Data Analytics,Spark Streaming and Spark SQL on top of an Amazon EMR cluster are widely used. 
 * Amazon Simple Storage Service (Amazon S3) forms the backbone of such architectures providing the persistent object storage layer for the AWS compute service.
+* Lambda architecture is an approach that mixes both batch and stream (real-time) dataprocessing and makes the combined data available for downstream analysis or viewing via a serving layer. It is divided into three layers: the batch layer, serving layer, and speed layer.
+
+![LA](https://user-images.githubusercontent.com/8856857/84128839-7bf0b900-aa84-11ea-8f73-88af7369c344.JPG)
+
+* Each of the layers in the Lambda architecture can be built using various analytics, streaming, and storage services available on the AWS platform. 
+  * The batch layer consists of the landing Amazon S3 bucket for storing all of the data (e.g.,clickstream, server, device logs, and so on) that is dispatched from one or more data sources.
+  * The raw data in the landing bucket can be extracted and transformed into a batch view for analytics using AWS Glue, a fully managed ETL service on the AWS platform. 
+  * Data analysis is performed using services like Amazon Athena, an interactive query service, or managedcHadoop framework using Amazon EMR. 
+  * Using Amazon QuickSight, customers can also perform visualization and one-time analysis. 
+![Building Blocks](https://user-images.githubusercontent.com/8856857/84129958-f5d57200-aa85-11ea-91aa-e294322c02a1.JPG)
+
+* Finally, the serving layer can be implemented with Spark SQL on Amazon EMR to process the data in Amazon S3 bucket from the batch layer, and Spark Streaming on an Amazon EMR cluster, which consumes data directly from Amazon Kinesis streams to create a view of the
+entire dataset which can be aggregated, merged or joined. 
+* The merged data set can be written to Amazon S3 for further visualization. 
+* The metadata (e.g., table definition and schema) associated with the processed data is stored in the AWS Glue catalog to make the data in the batch view immediately available for queries by downstream analytics services in the batch layer. 
+* Customer can use a Hadoop based stream processing application for analytics, such as Spark Streaming on Amazon EMR. 
 
 [Back to top :arrow_up:](#OrgExamples)
