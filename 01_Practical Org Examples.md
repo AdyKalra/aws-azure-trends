@@ -2,9 +2,11 @@
 
 |  Example  	|  Services	| Usecases |  	
 |:-:  |:-:  | :-:  | 
-| [Lambda Example showing Media Transformation](#aws-lambda-example-showing-media-transformation) | S3 APIG λ	| multi-platform media and content delivery pipeline |
-| | | |
-| | | |
+| [Lambda Example showing Media Transformation](#aws-lambda-example-showing-media-transformation) | S3 APIG λ	| multi-platform media, content delivery pipeline, on-demand image resizing|
+|[Deriving Multiple Data Format from Single Source](#deriving-multiple-data-format-from-single-source) | S3 SNS λ | event-driven system, Processing data logs to produce multiple result derivatives, convert media to multiple formats |
+|[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
 
 # AWS Lambda Example showing Media Transformation
 * Cross-device development is a huge concern when it comes to application development. Facilitating this comes at a high cost and manual tasks which hinders the efficiency of development teams.
@@ -46,6 +48,8 @@
 * Transforming the content from one format to another, for example, Microsoft Word to PDF.
 * A master media file which needs to be converted into multiple formats.
 
+[Back to top :arrow_up:](#OrgExamples)
+
 # Real-Time Data Processing Example using AWS Lambda
 * Processing data in real time and responding to them is highly imperative for modern business requirements. To enable this, analyzing the metrics data in real time is critical. But Amazon Kinesis Stream and AWS Lambda have made it possible!
 
@@ -74,6 +78,8 @@
 
 * Bustle processes high volume of site metric data in real time. This allows them to capture more data quickly. Which in turn helps them in analyzing how new features are affecting the website audience. Not only that, they have been able to monitor user engagement which has empowered marketing to make decisions driven by data.
 
+[Back to top :arrow_up:](#OrgExamples)
+
 # Custom Logic Workflows using AWS Lambda
 * We have often come across complex applications (e-commerce, analytics software, ERP, etc) which consists of complex repeatable scenarios that need to be executed in a response to some event. In other words, workflows.
 
@@ -97,7 +103,9 @@
 
 * Here’s another interesting example by Alex Casalboni where he developed a state machine which estimates the best power configuration to minimize the cost for any given Lambda function.
 
-# 5. Change Data Capture with AWS Lambda
+[Back to top :arrow_up:](#OrgExamples)
+
+# Change Data Capture with AWS Lambda
 * Many times it is required to analyze and keep track of the changes made in the database. Or maybe you want to process data before it is stored in the database. With AWS Lambda & DynamoDB Streams this is possible.
 
 * Amazon DynamoDB, when integrated with AWS Lambda, can help you trigger a piece of code that automatically responds to the events in the DynamoDB Streams. These triggers can help you build an application that reacts to the data modification in DynamoDB tables.
@@ -123,7 +131,9 @@
 
 * For this, whenever new books are added to the database, an AWS Lambda function will trigger which will notify SNS. This, in turn, will send mass emails to the students.
 
-# 6. AWS Lambda Example showing Custom Alexa Skills
+[Back to top :arrow_up:](#OrgExamples)
+
+# AWS Lambda Example showing Custom Alexa Skills
 * Most of us are familiar with Alexa, popularized with Amazon’s multiple lines of Echo smart speakers and devices.
 
 * We are accustomed to using voice-enabled searches and interacting with voice assistants in-built in our smartphones.
@@ -145,7 +155,9 @@
 * Playing the music
 * Need some more inspiration? Check out this list of 50 most useful Alexa Skills.
 
-# 7. Automated Stored Procedures using AWS Lambda
+[Back to top :arrow_up:](#OrgExamples)
+
+# Automated Stored Procedures using AWS Lambda
 * To derive multiple formats of data, sometimes users need to do compute work. This compute work is based on the data which is being inserted, updated or deleted to the database. However, oftentimes they do not want the compute work to be done on the compute resources but on the database itself.
 
 * Amazon Aurora MySQL has the ability to invoke Lambda as a “storage/stored procedure”. This functionality triggers the function before/after some operations of interest are performed on the particular database table.
@@ -178,8 +190,10 @@
   * Creating multiple copies of redshift clusters
   * Responding to failures/incidents
   * Number of automotive capabilities
+  
+[Back to top :arrow_up:](#OrgExamples)
 
-# 8. Serverless Image Recognition Engine
+# Serverless Image Recognition Engine
 * Imagine you have a website where people can upload images. As soon as the images are uploaded, you want the images to go through a set of workflow actions.
 
 * For example, a workflow where a user uploads an image which is stored in the S3 bucket triggers a Lambda function 1. This function invokes the state function workflow, as shown in the image.
@@ -203,7 +217,9 @@
 * Personalizing not just the content but images as well
 * Cropping mechanism where the system identifies the focal point and crops automatically
 
-# 9 Serverless Text-to-Speech Example
+[Back to top :arrow_up:](#OrgExamples)
+
+# Serverless Text-to-Speech Example
 * With the advent of AI enabled devices, text-to-speech has become imperative for modern applications. Medium being the latest one in facilitating TTS functionality. More to that, speech synthesis is a tricky subject and the list of interpretation challenges is endless.
 
 * With AWS Lambda & Amazon Polly, you can harness the power of lifelike speech synthesis application. Amazon Polly uses advance deep learning technologies to synthesize speech that resembles the human voice.
@@ -225,7 +241,9 @@
 * Meanwhile, Lambda function 1 is publishing a message to SNS which trigger Lambda function 2. This function along with Amazon Polly converts the text into the audio in the same language as the text.
 * After that, an MP3 file is stored in the S3 bucket with the reference URL and the information about the same will be stored in the DynamoDB.
 
-# 10 Personalized Content Delivery through AWS Lambda
+[Back to top :arrow_up:](#OrgExamples)
+
+# Personalized Content Delivery through AWS Lambda
 * Today most of the application facilitates the personalized content and news feed. This is possible because the personalized user experience is becoming an inevitable feature and accessing & monitoring of user touch points is becoming easy.
 
 * However, setting up and managing a complex architecture isn’t a requirement. AWS Lambda has made it possible to get started easily with a personalized content platform with the possibility to make changes on the go. Let’s take an example of our reference architecture.
@@ -246,3 +264,5 @@
  * User API: This keeps track of what users are browsing in the application, monitors their activity with respect to time.
  * Read/Write API: This is mostly pushing back and forth the data gathered into the DynamoDB
  * Admin API: This is for the editors to manage things manually from the backend, for example, change the tagging, turn off if it’s unsuitable for the students, etc.
+
+[Back to top :arrow_up:](#OrgExamples)
