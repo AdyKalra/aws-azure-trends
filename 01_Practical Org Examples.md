@@ -1,3 +1,8 @@
+|  Example  	|  Services	|   	
+|:-:  |:-:  |
+| [Lambda Example showing Media Transformation](#aws-lambda-example-showing-media-transformation) | S3 APIG λ	|
+| [awesome-web](#awesome-web) 	| [awesome-mobile](#awesome-mobile) 	| 
+
 # AWS Lambda Example showing Media Transformation
 * Cross-device development is a huge concern when it comes to application development. Facilitating this comes at a high cost and manual tasks which hinders the efficiency of development teams.
 
@@ -18,6 +23,8 @@
 * When you’re redesigning your website or app, you don’t need to resize your entire image archive. Transformation on the go gives you high agility.
 * With on-demand image resizing, you’re not required to store your archive in every possible format. Along with this, you can also delete the expired and older images.
 * With Lambda, each request is initiated if the required image is not available. This means each request is not affected in any way with the previous failover.
+
+[Back to top :arrow_up:](#trends)
 
 # Deriving Multiple Data Format from Single Source
 * Many times there comes a requirement when a single object is required in multiple formats. AWS Lambda along with S3 & SNS helps in building a general purpose event-driven system which processes the data in parallel.
