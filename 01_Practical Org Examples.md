@@ -4,7 +4,7 @@
 |:-:  |:-:  | :-:  | 
 | [Lambda Example showing Media Transformation](#aws-lambda-example-showing-media-transformation) | S3 APIG λ	| multi-platform media, content delivery pipeline, on-demand image resizing|
 |[Deriving Multiple Data Format from Single Source](#deriving-multiple-data-format-from-single-source) | S3 SNS λ | event-driven system, Processing data logs to produce multiple result derivatives, convert media to multiple formats |
-|[]() | S3 SNS λ |  |
+|[Real-Time Data Processing Example using AWS Lambda](#real-time-data-processing-example-using-aws-lambda) | Kinesis λ |λ polls kinesis streams, one Lambda function is invoked every 200ms per shard, Website clickstream, Payment transactions, IT logs, Location-based tracking, **Stream-based model (event source mapping)**, Event structure model(batch async) |
 |[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
