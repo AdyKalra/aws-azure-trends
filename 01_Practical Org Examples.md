@@ -10,6 +10,9 @@
 |[AWS Lambda Example showing Custom Alexa Skills](#aws-lambda-example-showing-custom-alexa-skills) | Alexa skill λ | Adding a meeting to the calendar, Finding out the nearest coffee shop, Create a reminder, Playing the music |
 |[Automated Stored Procedures using AWS Lambda](#automated-stored-procedures-using-aws-lambda) | Aurora λ SES SNS CloudWatch DynamoDB | traditional stored procedures have become a pain point in terms of consuming CPU resources, Send an email using SES,Issue a notification using SNS, Insert publish metrics to CloudWatch, Update a DynamoDB table, Implement complex ETL & workflows  |
 |[Combining AWS Lambda example with Amazon RedShift (Data Warehouse)](#on-the-application-level-you-can-now-do-the-following-things) | λ Redshift SNS | ETL , Single region multiple copies, Creating multiple copies of redshift clusters, Responding to failures/incidents |
+|[Serverless Image Recognition Engine](#serverless-image-recognition-engine) | Cognito λ StepFunctions Rekognition DynamoDB | Personalizing not just the content but images  |
+|[Serverless Text-to-Speech](#serverless-text-to-speech-example) | APIG S3 DynamoDB SNS Polly| Amazon Polly converts the text into the audio in the same language as the text |
+|[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
 |[]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
