@@ -13,7 +13,7 @@
 |[Serverless Image Recognition Engine](#serverless-image-recognition-engine) | Cognito λ StepFunctions Rekognition DynamoDB | Personalizing not just the content but images  |
 |[Serverless Text-to-Speech](#serverless-text-to-speech-example) | APIG S3 DynamoDB SNS Polly| Amazon Polly converts the text into the audio in the same language as the text |
 |[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
-|[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 SNS λ |  |
+|[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
 |[]() | S3 SNS λ |  |
 
 # AWS Lambda Example showing Media Transformation
