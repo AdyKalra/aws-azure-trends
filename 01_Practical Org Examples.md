@@ -14,6 +14,7 @@
 |[Serverless Text-to-Speech](#serverless-text-to-speech-example) | APIG S3 DynamoDB SNS Polly| Amazon Polly converts the text into the audio in the same language as the text |
 |[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
 |[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
+|[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
 # AWS Lambda Example showing Media Transformation
@@ -297,5 +298,10 @@ entire dataset which can be aggregated, merged or joined.
 * The merged data set can be written to Amazon S3 for further visualization. 
 * The metadata (e.g., table definition and schema) associated with the processed data is stored in the AWS Glue catalog to make the data in the batch view immediately available for queries by downstream analytics services in the batch layer. 
 * Customer can use a Hadoop based stream processing application for analytics, such as Spark Streaming on Amazon EMR. 
+
+[Back to top :arrow_up:](#OrgExamples)
+
+# Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services
+* 
 
 [Back to top :arrow_up:](#OrgExamples)
