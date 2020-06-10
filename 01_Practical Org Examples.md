@@ -14,7 +14,7 @@
 |[Serverless Text-to-Speech](#serverless-text-to-speech-example) | APIG S3 DynamoDB SNS Polly| Amazon Polly converts the text into the audio in the same language as the text |
 |[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
 |[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
-|[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services]() | S3 SNS λ |  |
+|[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
 |[]() | S3 SNS λ |  |
 
 # AWS Lambda Example showing Media Transformation
@@ -302,6 +302,30 @@ entire dataset which can be aggregated, merged or joined.
 [Back to top :arrow_up:](#OrgExamples)
 
 # Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services
-* 
+* How to convert an openly available dataset called MIMIC-III, which consists of de-identified medical data for about 40,000 patients, into an open source data model known as the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM). 
+  * It describes the architecture and steps for analyzing data across various disconnected sources of health datasets so you can start applying Big Data methods to health research.
+
+![HDW_OMOP](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2017/05/12/HDW_OMOP_1.gif)
+
+* The data conversion process includes the following steps:
+1. The entire infrastructure is spun up using an AWS CloudFormation template. This includes the Amazon EMR cluster, Amazon SNS topics/subscriptions, an AWS Lambda function and trigger, and AWS Identity and Access Management (IAM) roles.
+2. The MIMIC-III data is read in via an Apache Spark program that is running on Amazon EMR. The files are registered as tables in Spark so that they can be queried by Spark SQL.
+3. The transformation queries are located in a separate Amazon S3 location, which is read in by Spark and executed on the newly registered tables to convert the data into OMOP form.
+4. The data is then written to a staging S3 location, where it is ready to be copied into Amazon Redshift.
+5. As each file is loaded in OMOP form into S3, the Spark program sends a message to an SNS topic that signifies that the load completed successfully.
+6. After that message is pushed, it triggers a Lambda function that consumes the message and executes a COPY command from S3 into Amazon Redshift for the appropriate table.
+
+## Scaling the solution
+* The transformation code runs in a Spark container that can scale out based on how you define your EMR cluster. There are no single points of failure. As your data grows, your infrastructure can grow without requiring any changes to the underlying architecture.
+
+* If you add more data sources, such as EHRs and other research data, the high-level view of the ETL would look like the following:
+
+![HDW_OMOP_2](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2017/05/12/HDW_OMOP_2.gif)
+
+* In this case, the loads of the different systems are completely independent. If the EHR load is four times the size that you expected and uses all the resources, it has no impact on the Research Data or HR System loads because they are in separate containers.
+
+* You can scale your EMR cluster based on the size of the data that you anticipate. For example, you can have a 50-node cluster in your container for loading EHR data and a 2-node cluster for loading the HR System. This design helps you scale the resources based on what you consume, as opposed to expensive infrastructure sitting idle.
+
+* The only code that is unique to each execution is any diffs between the CloudFormation templates (e.g., cluster size and SQL file locations) and the transformation SQL that resides in S3 buckets. The Spark jar that is executed as an EMR step is reused across all three executions.
 
 [Back to top :arrow_up:](#OrgExamples)
