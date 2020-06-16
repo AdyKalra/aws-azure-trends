@@ -15,11 +15,51 @@
 |[Personalized Content Delivery through AWS Lambda](#personalized-content-delivery-through-aws-lambda) | APIG λ Cloudserach | Personalisation |
 |[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
 |[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
-|[]() | S3 SNS λ |  |
+|[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
 |[]() | S3 SNS λ |  |
 
 # Scrape 300k prices per day from Google Flights
-* 
+* Brisk Voyage finds cheap, last-minute weekend trips for our members. The basic idea is that we continuously check a bunch of flight and hotel prices, and when we find a trip that’s a low-priced outlier, we send an email with booking instructions.
+
+### AWS Simple Queue Service (SQS)
+* We use SQS to serve a queue of URLs to crawl. Google Flights URLs look like this: https://www.google.com/flights?hl=en#flt=BOS.JFK,LGA,EWR.2020-11-13*JFK,LGA,EWR.BOS.2020-11-16;c:USD;e:1;sd:1;t:f.
+  * The three-letter codes in the URL above are IATA airport codes. If you click that link, notice how there are multiple destination airports. This is one key to efficient Google Flights scraping! 
+  * A single SQS queue stores all Google Flights URLs that need to be crawled. When the crawler runs, it will pick off a message from the queue. Order is not important, so a standard queue (not a FIFO) is used. 
+
+### AWS Lambda (using Chalice)
+* Lambda is where the crawler actually runs. We use Chalice, which is an excellent Lambda microframework for Python, to deploy functions to Lambda. 
+  * Although Serverless is the most popular Lambda framework, it is written in NodeJS. This is a turn-off for us given that we’re most familiar with Python, and want to keep our stack uniform. We’ve been very happy with Chalice — it’s as simple as Flask to use, and it allows the entire Brisk Voyage backend to be Python on Lambda.
+* The crawler consists of two Lambda functions:
+  * The primary Lambda function ingests messages from the SQS queue, crawls Google Flights, and stores the output. When this function runs, it launches a Chrome browser on the Lambda instance and crawls the page. 
+  * The second Lambda function triggers multiple instances of the first function. This runs as many crawlers as we need in parallel. This function is defined to run at two minutes past the hour during UTC hours 15–22 every day. 
+* An alternative would be to use the SQS queue as an event source for the crawl function, so that when the queue populates, the crawlers automatically scale up. We originally used this approach. 
+  * There is one big drawback, however: the maximum number of messages that can be ingested by one invocation (batch size) is 10, meaning that the function has to be freshly invoked for every group of 10 messages. 
+  * This not only causes compute inefficiency, but increases bandwidth drastically as the browser cache is destroyed every time the function restarts. There are ways around this, but in our experience, they have lead lots of extra complexity.
+  
+### A note on Lambda costs
+* Lambda costs $0.00001667/GB/second, while many EC2 instances cost one-sixth of that. We currently pay around $50/month for Lambda, so this would mean we could substantially reduce these costs. 
+  * Lambda, however, has two big benefits: first, it scales up and down instantly with zero effort on our part, meaning we are not ever paying for an idling server. 
+  * Second, it’s what the rest of our stack is built on. Less technology means less cognitive overhead. If the number of pages we crawl ramps up, it will make sense to reconsidering EC2 or a similar compute service. At this point, I think an extra $40 per month ($50 on Lambda vs ~$10 on EC2) is worth the simplicity for us.
+
+### Pyppeteer
+* Pyppeteer is a Python library for interacting with Puppeteer, a headless Chrome API. Since Google Flights requires Javascript to load prices, it is necessary to actually render the full page. Each of the 50 crawl functions launches its own copy of a headless Chrome browser, which is controlled with Pyppeteer.
+
+* The crawl function reads a URL from the SQS queue, then Pyppeteer tells Chrome to navigate to that page behind a rotating residential proxy from PacketStream. The residential proxy is necessary to prevent Google from blocking the IP Lambda makes requests from.
+
+* Once the prices are extracted, we delete the SQS message, and re-queue any origin/destinations that weren’t displayed within the flight results. We then move onto the next page
+  * a new URL is pulled from the queue, and the process repeats. After the first page crawled in each crawl instance, pages require much less bandwidth to load (~100kb instead of 3 MB) due to Chrome’s caching. 
+  * This means that we want to keep the instance alive as long as possible, and crawl as many trips as we can in order to preserve the cache. Because it’s advantageous to persist functions to retain the cache, crawl‘s timeout is 15 minutes, which is the maximum that AWS currently allows. 
+  
+### DynamoDB
+* After it’s extracted from the page, we have to store the flight data. We chose DynamoDB for this because it has on-demand scaling. This was important for us, as we were uncertain about what kinds of loads we would need. It’s also cheap, and 25GB comes free under AWS’s Free Tier.
+  * DynamoDB has taken some work to get right. Normally, tables can only have one primary index with one sort key. 
+  * Adding secondary indices is possible, but is either limited or requires additional provisioning, which increases costs. 
+  * Due to this limitation on indices, DynamoDB works best when the usage is fully thought-out beforehand. It took us a couple tries to get the table design right. In retrospect, DynamoDB is a little inflexible for the kind of product we’re building. Now that Aurora Serverless offers PostgreSQL, it may be wise for us to switch to that at some point.
+
+### Monitoring and testing
+* We use Dashbird for monitoring the crawler and everything else that’s run under Lambda. Good monitoring is a requirement for scraping applications because page structure changes are a constant danger. At any time (even multiple times per day, as we’ve seen with Google Flights recently) the page structure can change, which breaks the crawler. We need to be alerted when this occurs. We have two separate mechanisms to track this:
+1. A Dashbird alert that emails us when there is a crawl failure.
+1. A GitHub Action that runs every 3 hours that runs a test crawl and verifies the results make sense. Since that crawler isn’t always running, this alerts us when Google Flights changes their page structure outside of operating hours. This way, the crawler can be fixed prior to starting for the day.
 
 [Back to top :arrow_up:](#OrgExamples)
 
