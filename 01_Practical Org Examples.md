@@ -1,4 +1,4 @@
-> [Preview on the web](https://nicedoc.io/AdyKalra/awstrends/blob/master/01_Practical Org Examples.md)
+> [Preview on the web](https://nicedoc.io/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md)
 
 ### OrgExamples
 
