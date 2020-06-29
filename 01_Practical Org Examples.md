@@ -1,3 +1,5 @@
+> [Preview on the web](https://nicedoc.io/AdyKalra/awstrends/blob/master/01_Practical Org Examples.md)
+
 ### OrgExamples
 
 |  Example  	|  Services	| Usecases |  	
