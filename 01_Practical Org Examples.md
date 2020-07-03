@@ -20,6 +20,27 @@
 |[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
 |[]() | S3 SNS λ |  |
 
+# Optimize Delivery of Trending, Personalized News 
+* Gunosy is a news curation application that covers a wide range of topics, such as entertainment, sports, politics, and gourmet news. The application has been installed more than 20 million times. Gunosy aims to provide people with the content they want without the stress of dealing with a large influx of information. We analyze user attributes, such as gender and age, and past activity logs like click-through rate (CTR). We combine this information with article attributes to provide trending, personalized news articles to users.
+
+### Solution
+* The following diagrams depict the architecture for optimizing article delivery by processing real-time user activity logs
+![Gunosy1](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2018/01/03/Gunosy1.png)
+![Gunosy2](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2018/01/03/Gunosy2.png)
+* There are three processing flows:
+ * Process real-time user activity logs.
+ * Store and process all user-based and article-based logs.
+ * Execute ad hoc or heavy queries.
+
+### Why does Gunosy need real-time processing?
+* Users need fresh and personalized news. There are two constraints to consider when delivering appropriate articles:
+ * Time: Articles have freshness—that is, they lose value over time. New articles need to reach users as soon as possible.
+ * Frequency (volume): Only a limited number of articles can be shown. It’s unreasonable to display all articles in the application, and users can’t read all of them anyway.
+
+* We optimize the delivery of articles with these two steps.
+ * Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article—to account for each user’s interests.
+ * Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users.
+
 # Scrape 300k prices per day from Google Flights
 * Brisk Voyage finds cheap, last-minute weekend trips for our members. The basic idea is that we continuously check a bunch of flight and hotel prices, and when we find a trip that’s a low-priced outlier, we send an email with booking instructions.
 
