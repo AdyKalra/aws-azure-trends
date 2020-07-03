@@ -18,7 +18,7 @@
 |[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
 |[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
 |[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
-|[Optimize Delivery of Trending, Personalized News]() | S3 SNS λ |  |
+|[Optimize Delivery of Trending, Personalized News](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#optimize-delivery-of-trending-personalized-news) | Kinesis Data Streams, S3, Kinesis Data Analytics, Firehose, λ, fluentd, DynamoDB, RDS, Redshift, Athena |  |
 |[]() | S3 SNS λ |  |
 
 
