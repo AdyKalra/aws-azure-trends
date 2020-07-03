@@ -18,7 +18,9 @@
 |[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
 |[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
 |[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
+|[Optimize Delivery of Trending, Personalized News]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
+
 
 # Optimize Delivery of Trending, Personalized News 
 * Gunosy is a news curation application that covers a wide range of topics, such as entertainment, sports, politics, and gourmet news. The application has been installed more than 20 million times. Gunosy aims to provide people with the content they want without the stress of dealing with a large influx of information. We analyze user attributes, such as gender and age, and past activity logs like click-through rate (CTR). We combine this information with article attributes to provide trending, personalized news articles to users.
@@ -40,6 +42,8 @@
 * We optimize the delivery of articles with these two steps.
  * Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article—to account for each user’s interests.
  * Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users.
+
+[Back to top :arrow_up:](#OrgExamples)
 
 # Scrape 300k prices per day from Google Flights
 * Brisk Voyage finds cheap, last-minute weekend trips for our members. The basic idea is that we continuously check a bunch of flight and hotel prices, and when we find a trip that’s a low-priced outlier, we send an email with booking instructions.
