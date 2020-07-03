@@ -18,21 +18,12 @@
 |[Lambda Architecture for Batch and Stream Processing](#lambda-architecture-for-batch-and-stream-processing) | S3 Glue λ EMR Kinesis Athena |  |
 |[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
 |[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
-|[Optimize Delivery of Trending, Personalized News](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#optimize-delivery-of-trending-personalized-news) | Kinesis Data Streams, S3, Kinesis Data Analytics, Firehose, λ, fluentd, DynamoDB, RDS, Redshift, Athena |  |
+|[Optimize Delivery of Trending, Personalized News](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#optimize-delivery-of-trending-personalized-news) | Kinesis Data Streams, S3, Kinesis Data Analytics, Firehose, λ, fluentd, DynamoDB, RDS, Redshift, Athena | Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article.Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users. |
 |[]() | S3 SNS λ |  |
 
 
 # Optimize Delivery of Trending, Personalized News 
 * Gunosy is a news curation application that covers a wide range of topics, such as entertainment, sports, politics, and gourmet news. The application has been installed more than 20 million times. Gunosy aims to provide people with the content they want without the stress of dealing with a large influx of information. We analyze user attributes, such as gender and age, and past activity logs like click-through rate (CTR). We combine this information with article attributes to provide trending, personalized news articles to users.
-
-### Solution
-* The following diagrams depict the architecture for optimizing article delivery by processing real-time user activity logs
-![Gunosy1](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2018/01/03/Gunosy1.png)
-![Gunosy2](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2018/01/03/Gunosy2.png)
-* There are three processing flows:
- * Process real-time user activity logs.
- * Store and process all user-based and article-based logs.
- * Execute ad hoc or heavy queries.
 
 ### Why does Gunosy need real-time processing?
 * Users need fresh and personalized news. There are two constraints to consider when delivering appropriate articles:
@@ -42,6 +33,15 @@
 * We optimize the delivery of articles with these two steps.
  * Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article—to account for each user’s interests.
  * Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users.
+
+### Solution
+* The following diagrams depict the architecture for optimizing article delivery by processing real-time user activity logs
+![Gunosy1](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2018/01/03/Gunosy1.png)
+![Gunosy2](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2018/01/03/Gunosy2.png)
+* There are three processing flows:
+ * Process real-time user activity logs.
+ * Store and process all user-based and article-based logs.
+ * Execute ad hoc or heavy queries.
 
 [Back to top :arrow_up:](#OrgExamples)
 
