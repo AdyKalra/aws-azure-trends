@@ -7,3 +7,4 @@ Cattle or crickets? You decide!  |  https://servers.lol  |
 |AWS Diagrams native | https://aws.amazon.com/architecture/icons/ |
 |AWS Diagrams online | https://app.cloudcraft.co/ |
 |AWS notes represented in diagrams|https://www.awsgeek.com/|
+|Micro Template Scanner|https://aws.amazon.com/blogs/apn/using-shift-left-to-find-vulnerabilities-before-deployment-with-trend-micro-template-scanner/|
