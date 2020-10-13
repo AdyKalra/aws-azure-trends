@@ -31,6 +31,8 @@ Document Oriented
 
   - Dynamo DB
 
+ - FSx for Lustre
+
 Collection = Table, Document = Row, Keys-Value Pairs = Fields
 
 ### Data Warehousing
