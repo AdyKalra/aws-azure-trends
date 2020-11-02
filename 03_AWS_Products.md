@@ -1,5 +1,7 @@
 #### [AWS](https://aws.amazon.com/products/) 
 
+[AWS-in-bullet-points](https://github.com/undergroundwires/AWS-in-bullet-points)
+
 ##### Compute
 |  Name |  Summary | Details  | Use cases |  
 |:-:    |:-:       |:-:       |:-:        |
