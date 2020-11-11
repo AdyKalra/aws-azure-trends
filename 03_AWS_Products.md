@@ -2,6 +2,8 @@
 
 [AWS-in-bullet-points](https://github.com/undergroundwires/AWS-in-bullet-points)
 
+[AWS-Periodic-Table services categorized](https://www.awsgeek.com/AWS-Periodic-Table/)
+
 ##### Compute
 |  Name |  Summary | Details  | Use cases |  
 |:-:    |:-:       |:-:       |:-:        |
