@@ -11,3 +11,4 @@
 |List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)|
 |Sometimes we need an Amazon EC2 instance with static fixed IP for testing or development purpose for a duration of time(probably hours)|https://github.com/pahud/cdk-spot-one|
 |Cloudiscovery- The tool to help you discover resources in the cloud environment|[Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery)|
+||https://spot.io/| Here at Spot by NetApp we’re continuously innovating our machine learning models used for identifying and predicting spot capacity usage and interruptions for all major public clouds (AWS, Azure and GCP). These proprietary algorithms expand the ability to utilize spot capacity for production and mission-critical workloads, allowing our customers to enjoy up to 90% cloud compute cost reduction with SLAs and SLOs that guarantee availability.|
