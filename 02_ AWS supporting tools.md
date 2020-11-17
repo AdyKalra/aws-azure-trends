@@ -1,5 +1,5 @@
 |  Tool | Purpose  | 
-|   :-:    |  :-:  | 
+|   :-: |  :-:  | 
 | https://servers.lol | Should your EC2 be a Lambda? Cattle or crickets? You decide!  | 
 | https://www.ec2instances.info/ | Easy Amazon EC2 Instance Comparison  | 
 | https://status.aws.amazon.com/#AP_block | AWS Service Health Dashboard |
