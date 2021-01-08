@@ -19,12 +19,17 @@
 |[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
 |[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
 |[Optimize Delivery of Trending, Personalized News](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#optimize-delivery-of-trending-personalized-news) | Kinesis Data Streams, S3, Kinesis Data Analytics, Firehose, λ, fluentd, DynamoDB, RDS, Redshift, Athena | Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article.Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users. |
-|[PayGo Leveraging Smart Meters to Help Customers Conserve Energy]() | S3 SNS λ |  |
+|[PayGo Leveraging Smart Meters to Help Customers Conserve Energy](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#paygo-leveraging-smart-meters-to-help-customers-conserve-energy) | ELB EC2 S3 | real time usage information , make payments for Utilities  |
 |[]() | S3 SNS λ |  |
 
 
 # PayGo Leveraging Smart Meters to Help Customers Conserve Energy
-* 
+![PayGo](https://user-images.githubusercontent.com/8856857/103969758-c6711a00-51ba-11eb-9a19-6298d2d6fc50.png)
+* Visit the utility website through ELB -> Data in EC2 -> Utility Company -> communicates to smart meter
+* Barcode on Mobile or Paper utilty bill -> Particiapting retailer -> Evaluate Business rules -> Payment goes to EC2 -> Utility Company -> communicates to smart meter
+* Persist data through EC2 instead of RDS , reason - features that RDS did not support in the past therefore SQL server on Windows OS in EC2
+* High Availability and DR - Stack redundant on different AZ, DR - > backing data onto S3 and cross reigon replicated 
+* Next steps -> SQL server to RDS , Infrastructure automation and orchestration - for building environemnets
 
 # Optimize Delivery of Trending, Personalized News 
 * Gunosy is a news curation application that covers a wide range of topics, such as entertainment, sports, politics, and gourmet news. The application has been installed more than 20 million times. Gunosy aims to provide people with the content they want without the stress of dealing with a large influx of information. We analyze user attributes, such as gender and age, and past activity logs like click-through rate (CTR). We combine this information with article attributes to provide trending, personalized news articles to users.
