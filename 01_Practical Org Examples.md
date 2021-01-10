@@ -19,12 +19,12 @@
 |[Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services](#optimize-delivery-of-trending-personalized-news-using-amazon-kinesis-and-related-services) | Cloudformation stack EMR Redshift S3 SNS λ | convert data sets into Data Models  |
 |[Scrape 300k prices per day from Google Flights](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#scrape-300k-prices-per-day-from-google-flights) | SQS λ Chalice DynamoDB Pyppeteer GithubActions Dashbird | scraping using two lambdas - one for triggering , other for scraping |
 |[Optimize Delivery of Trending, Personalized News](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#optimize-delivery-of-trending-personalized-news) | Kinesis Data Streams, S3, Kinesis Data Analytics, Firehose, λ, fluentd, DynamoDB, RDS, Redshift, Athena | Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article.Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users. |
-|[PayGo Leveraging Smart Meters to Help Customers Conserve Energy](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#paygo-leveraging-smart-meters-to-help-customers-conserve-energy) | ELB EC2 S3 | real time usage information , make payments for Utilities , λ, Rekognition |
-|[]() | ALB, API server , Route53, ElasticCache Redis , CloudFront, RDS Aurora, S3, DocumentDB, NGINX Server  |  |
+|[PayGo Leveraging Smart Meters to Help Customers Conserve Energy](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#paygo-leveraging-smart-meters-to-help-customers-conserve-energy) | ELB EC2 S3 | real time usage information , make payments for Utilities|
+|[Audio Live Streaming and Batch Processing Architecture](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#sppon-radio---audio-live-streaming-and-batch-processing-architecture-on-aws) | ALB, API server , Route53, ElasticCache Redis , CloudFront, RDS Aurora, S3, DocumentDB, NGINX Server , λ, Rekognition | live streaming and batch processing , Rekognition for content moderation |
 |[]() | S3 SNS λ |  |
 
-# Sppon Radio - Audio Live Streaming and Batch Processing Architecture on AWS 
-
+# Spoon Radio - Audio Live Streaming and Batch Processing Architecture on AWS 
+![Spoon](https://user-images.githubusercontent.com/8856857/104137926-8dbc8500-53f4-11eb-8520-2e04a25851a4.png)
 * DJ's open live room witgh ALB and API Server - which reuests a chat room server and the live streaming server through the streaming server.
 * All data stored in RDS aurora at the same time stored in DocumentDB
 * Listeners listen through API server 
