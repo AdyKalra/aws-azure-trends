@@ -22,6 +22,11 @@
 |[PayGo Leveraging Smart Meters to Help Customers Conserve Energy](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#paygo-leveraging-smart-meters-to-help-customers-conserve-energy) | ELB EC2 S3 | real time usage information , make payments for Utilities|
 |[Audio Live Streaming and Batch Processing Architecture](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#sppon-radio---audio-live-streaming-and-batch-processing-architecture-on-aws) | ALB, API server , Route53, ElasticCache Redis , CloudFront, RDS Aurora, S3, DocumentDB, NGINX Server , λ, Rekognition | live streaming and batch processing , Rekognition for content moderation |
 |[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
+
+# Levels Beyond: Digital Content Orchestration
+![]()
+* 
 
 # Spoon Radio - Audio Live Streaming and Batch Processing Architecture on AWS 
 ![Spoon](https://user-images.githubusercontent.com/8856857/104137926-8dbc8500-53f4-11eb-8520-2e04a25851a4.png)
