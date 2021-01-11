@@ -21,12 +21,13 @@
 |[Optimize Delivery of Trending, Personalized News](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#optimize-delivery-of-trending-personalized-news) | Kinesis Data Streams, S3, Kinesis Data Analytics, Firehose, λ, fluentd, DynamoDB, RDS, Redshift, Athena | Personalization: Deliver articles based on each user’s attributes, past activity logs, and feature values of each article.Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users. |
 |[PayGo Leveraging Smart Meters to Help Customers Conserve Energy](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#paygo-leveraging-smart-meters-to-help-customers-conserve-energy) | ELB EC2 S3 | real time usage information , make payments for Utilities|
 |[Audio Live Streaming and Batch Processing Architecture](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#sppon-radio---audio-live-streaming-and-batch-processing-architecture-on-aws) | ALB, API server , Route53, ElasticCache Redis , CloudFront, RDS Aurora, S3, DocumentDB, NGINX Server , λ, Rekognition | live streaming and batch processing , Rekognition for content moderation |
-|[]() | S3 SNS λ |  |
+|[Digital Content Orchestration](Levels Beyond: Digital Content Orchestration) | S3 , StepFns, Meda Convert, λ, DynamoDB, Rekognition, Transcribe , Comprehend | Levels Beyond uses AWS Services to enable customers to quickly automate, package, and distribute digital content for orchestration.  |
 |[]() | S3 SNS λ |  |
 
 # Levels Beyond: Digital Content Orchestration
-![]()
-* 
+![Content Orchestration](https://user-images.githubusercontent.com/8856857/104250543-ea39a600-54c1-11eb-8ec3-a18f946dc6e6.png)
+* User -> Upload File to S3 -> Triggers Step Fn -> Media Convert (creates a proxy for playing back and browser) , trigger λ extract metadata and stored in DynamoDB, trigger Rekognition for validating data profiles (eg nudity) stored in DynamoDB, trigger Transcribe (take audio from content and translate to text) -> sent to Comprehend again stored in DynamoDB.
+* Ingest into Reach Engine (EC2, EKS)- ( allow users to replay content , view metadata, search metadata, visualization of data from Rkognition) 
 
 # Spoon Radio - Audio Live Streaming and Batch Processing Architecture on AWS 
 ![Spoon](https://user-images.githubusercontent.com/8856857/104137926-8dbc8500-53f4-11eb-8520-2e04a25851a4.png)
