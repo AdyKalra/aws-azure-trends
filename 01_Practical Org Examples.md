@@ -22,7 +22,14 @@
 |[PayGo Leveraging Smart Meters to Help Customers Conserve Energy](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#paygo-leveraging-smart-meters-to-help-customers-conserve-energy) | ELB EC2 S3 | real time usage information , make payments for Utilities|
 |[Audio Live Streaming and Batch Processing Architecture](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#sppon-radio---audio-live-streaming-and-batch-processing-architecture-on-aws) | ALB, API server , Route53, ElasticCache Redis , CloudFront, RDS Aurora, S3, DocumentDB, NGINX Server , λ, Rekognition | live streaming and batch processing , Rekognition for content moderation |
 |[Digital Content Orchestration](Levels Beyond: Digital Content Orchestration) | S3 , StepFns, Meda Convert, λ, DynamoDB, Rekognition, Transcribe , Comprehend | Levels Beyond uses AWS Services to enable customers to quickly automate, package, and distribute digital content for orchestration.  |
+|[monitoring system that serves 50K requests per minute, ]() | S3 SNS λ | how Zoho Site24x7 built a user monitoring system that serves up to 50K requests per minute.  |
+|[high-performance DDOS and Edge Protection platform]() | S3 SNS λ | Learn how William Hill built a high-performance DDOS and Edge Protection platform using AWS Services that has been effective in mitigating a 177 GBPS DDOS attacks and 48 million attempted exploits (in 2019) from across 121,000 IPs and 196 countries. In addition, the company successfully blocked 63 million requests from 180,000 IPs from 202 countries, all trying to scrape pricing and event data, which if successful, is highly detrimental to the business as well as to customer experience.  |
 |[]() | S3 SNS λ |  |
+
+# Zoho - monitoring system that serves 50K requests per minute
+
+# WilliamHill - high-performance DDOS and Edge Protection platform
+
 
 # Levels Beyond: Digital Content Orchestration
 ![Content Orchestration](https://user-images.githubusercontent.com/8856857/104250543-ea39a600-54c1-11eb-8ec3-a18f946dc6e6.png)
