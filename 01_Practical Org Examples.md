@@ -33,8 +33,7 @@
 * CloudFront -> ShieldAdvanced (mitifate layer 3 and 4 DDOS attempts) and low complexity layer 7
 * For more higher complexity layer 7 - use WAF 
 * CloudFront -> Route53 ( two hosted zones) -> traffic to ELB (nonsensitive traffic) , traffic to EC2 that hosts F5 big IP (sensitive traffic) [extra layer of protection]
-* VPC -> VPC peering (that has 7 different channel accounts where appln sits) -> VPC 
-* 
+* VPC -> VPC peering (that has 7 different channel accounts where appln sits) -> VPC * 
 
 # Zoho - monitoring system that serves 50K requests per minute
 ![site24/7](https://user-images.githubusercontent.com/8856857/104406910-8cd25180-55b4-11eb-88cc-c52683448f23.png)
@@ -44,8 +43,7 @@
 * Dashboard (API requests)-> ALB -> Processors 
 * Enhancements -> Geo based routing , Replace EC2 collectors to λ, maintaining and automating deployments across reigons using code deploy
 * EC2, ELB -> Direct connect -> ON-Prem
-* logs of traffic from CloudFront -> S3 -> logs to Onprem analysis servers -> analysed ips sent to DyanamoDB, λ runs inspects the table for new / expired entries -> updates WAF filters 
-* 
+* logs of traffic from CloudFront -> S3 -> logs to Onprem analysis servers -> analysed ips sent to DyanamoDB, λ runs inspects the table for new / expired entries -> updates WAF filters  
 
 # Levels Beyond: Digital Content Orchestration
 ![Content Orchestration](https://user-images.githubusercontent.com/8856857/104250543-ea39a600-54c1-11eb-8ec3-a18f946dc6e6.png)
