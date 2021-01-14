@@ -24,12 +24,14 @@
 |[Digital Content Orchestration](Levels Beyond: Digital Content Orchestration) | S3 , StepFns, Meda Convert, λ, DynamoDB, Rekognition, Transcribe , Comprehend | Levels Beyond uses AWS Services to enable customers to quickly automate, package, and distribute digital content for orchestration.  |
 |[Scalable realtime user monitoring system that serves 50K requests per minute, ](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#zoho---monitoring-system-that-serves-50k-requests-per-minute) | CDN, ALB, Route53, EC2, SQS,  Redis, Cassandra | how Zoho Site24x7 built a user monitoring system that serves up to 50K requests per minute.  |
 |[high-performance DDOS and Edge Protection platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#williamhill---high-performance-ddos-and-edge-protection-platform) | CloudFront , Route53, ShieldAdvanced, WAF, ELB, EC2 , DataConnect , VPC peering, DynamoDB , λ , s3  Learn how William Hill built a high-performance DDOS and Edge Protection platform using AWS Services that has been effective in mitigating a 177 GBPS DDOS attacks and 48 million attempted exploits (in 2019) from across 121,000 IPs and 196 countries. In addition, the company successfully blocked 63 million requests from 180,000 IPs from 202 countries, all trying to scrape pricing and event data, which if successful, is highly detrimental to the business as well as to customer experience. |
-|[Ingest and Analyze Millions of Application Events Daily for Compliance Violations]() | S3 SNS λ |  |
+|[Infor - Ingest and Analyze Millions of Application Events Daily for Compliance Violations](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#ingest-and-analyze-millions-of-application-events-daily-for-compliance-violations) | S3 SQS , Kinesis, Fargate, EMR, EventBridge , Aurora | Infor modernized a single-tenant application deployed for individual customers into a multi-tenant scalable application capable of ingesting, storing, and analyzing millions of customer application events per day. |
 |[]() | S3 SNS λ |  |
 
 # Ingest and Analyze Millions of Application Events Daily for Compliance Violations
-![]()
-*    
+![Ingest](https://user-images.githubusercontent.com/8856857/104660446-a2fa2200-571a-11eb-856d-f6f6935d69c9.png)
+*  Ingestion Flow = Applications generate security and data -> Kinesis Strem -> service on Fargate , parses the data -> Aurora DB and S3 buckets (scheduled glue jobs that do ETL)
+* Scheduled Events (managed by cx) that trigger analysis -> Analysis Engine runs on Fargate -> Trigger EMR jon on Spark engine (retrieves data from aurora and S3) -> violations sent to EventBridge -> SQS message -> Fargate (decorate violations and send emails to cx on smtp.
+* Transient and long running jobs on EMR cluster
 
 # WilliamHill - high-performance DDOS and Edge Protection platform
 ![WH](https://user-images.githubusercontent.com/8856857/104408133-82658700-55b7-11eb-88a1-4f3e45e5de42.png)
