@@ -24,8 +24,12 @@
 |[Digital Content Orchestration](Levels Beyond: Digital Content Orchestration) | S3 , StepFns, Meda Convert, λ, DynamoDB, Rekognition, Transcribe , Comprehend | Levels Beyond uses AWS Services to enable customers to quickly automate, package, and distribute digital content for orchestration.  |
 |[Scalable realtime user monitoring system that serves 50K requests per minute, ](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#zoho---monitoring-system-that-serves-50k-requests-per-minute) | CDN, ALB, Route53, EC2, SQS,  Redis, Cassandra | how Zoho Site24x7 built a user monitoring system that serves up to 50K requests per minute.  |
 |[high-performance DDOS and Edge Protection platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#williamhill---high-performance-ddos-and-edge-protection-platform) | CloudFront , Route53, ShieldAdvanced, WAF, ELB, EC2 , DataConnect , VPC peering, DynamoDB , λ , s3  Learn how William Hill built a high-performance DDOS and Edge Protection platform using AWS Services that has been effective in mitigating a 177 GBPS DDOS attacks and 48 million attempted exploits (in 2019) from across 121,000 IPs and 196 countries. In addition, the company successfully blocked 63 million requests from 180,000 IPs from 202 countries, all trying to scrape pricing and event data, which if successful, is highly detrimental to the business as well as to customer experience. |
+|[Ingest and Analyze Millions of Application Events Daily for Compliance Violations]() | S3 SNS λ |  |
 |[]() | S3 SNS λ |  |
 
+# Ingest and Analyze Millions of Application Events Daily for Compliance Violations
+![]()
+*    
 
 # WilliamHill - high-performance DDOS and Edge Protection platform
 ![WH](https://user-images.githubusercontent.com/8856857/104408133-82658700-55b7-11eb-88a1-4f3e45e5de42.png)
