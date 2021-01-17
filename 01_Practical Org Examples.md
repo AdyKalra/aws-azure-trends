@@ -25,12 +25,21 @@
 |[Scalable realtime user monitoring system that serves 50K requests per minute, ](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#zoho---monitoring-system-that-serves-50k-requests-per-minute) | CDN, ALB, Route53, EC2, SQS,  Redis, Cassandra | how Zoho Site24x7 built a user monitoring system that serves up to 50K requests per minute.  |
 |[high-performance DDOS and Edge Protection platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#williamhill---high-performance-ddos-and-edge-protection-platform) | CloudFront , Route53, ShieldAdvanced, WAF, ELB, EC2 , DataConnect , VPC peering, DynamoDB , λ , s3  Learn how William Hill built a high-performance DDOS and Edge Protection platform using AWS Services that has been effective in mitigating a 177 GBPS DDOS attacks and 48 million attempted exploits (in 2019) from across 121,000 IPs and 196 countries. In addition, the company successfully blocked 63 million requests from 180,000 IPs from 202 countries, all trying to scrape pricing and event data, which if successful, is highly detrimental to the business as well as to customer experience. |
 |[Infor - Ingest and Analyze Millions of Application Events Daily for Compliance Violations](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#ingest-and-analyze-millions-of-application-events-daily-for-compliance-violations) | S3 SQS , Kinesis, Fargate, EMR, EventBridge , Aurora | Infor modernized a single-tenant application deployed for individual customers into a multi-tenant scalable application capable of ingesting, storing, and analyzing millions of customer application events per day. |
-|[HaloDoc - Monolith to Microservices]() | S3 SNS λ | evolved their monolithic back end into decoupled microservices with Amazon EC2 & SQS, adopted serverless to cost effectively support new user functionality with AWS Lambda, and manage the high volume and velocity of data with Amazon DynamoDB, RDS and Redshift. |
+|[HaloDoc - Monolith to Microservices](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#halodoc---monolith-to-microservices) | EC2 , RDS ,  SNS λ , Kafka , Flink , Grafana, Kibana , Redshift, S3, Rekognition| evolved their monolithic back end into decoupled microservices with Amazon EC2 & SQS, adopted serverless to cost effectively support new user functionality with AWS Lambda, and manage the high volume and velocity of data with Amazon DynamoDB, RDS and Redshift. |
 |[]() | S3 SNS λ |  |
 
 # HaloDoc - Monolith to Microservices
-![]()
-* 
+![HaloDoc1](https://user-images.githubusercontent.com/8856857/104859425-65470480-5979-11eb-9d05-3e0f52647039.png)
+![HaloDoc2](https://user-images.githubusercontent.com/8856857/104859458-99222a00-5979-11eb-9b24-36a6977c7657.png)
+* EC2 with RDS for each microservice
+* Data Partitioning - DynamoDB to save all data , having a low latency DB
+* To remove tight coupling between microservices - SNS 
+* Serverless - Doctor - elecrtronic prescription(Consulation service would raise an event and that will trigger a λ
+* Realtime visbility of data - each microservice would raise an event to SNS which triggers λs , enriched data sent to Kafka ,flink , elastic search -> Grafana dashboards 
+* Transactional Data [Scalable warehouse]- RDS -> DMS -> Redshift ( run queries) , old data goes to Glacier for record keeping
+* Streaming - Kafka ->Elastic search(persistent layer)-> Kibana / Grafana (Dashboards)
+* Image repo -> image uploaded to s3 -> rekognition (unsafe images) 
+
 
 # Ingest and Analyze Millions of Application Events Daily for Compliance Violations
 ![Ingest](https://user-images.githubusercontent.com/8856857/104660446-a2fa2200-571a-11eb-856d-f6f6935d69c9.png)
