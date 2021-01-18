@@ -26,12 +26,19 @@
 |[high-performance DDOS and Edge Protection platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#williamhill---high-performance-ddos-and-edge-protection-platform) | CloudFront , Route53, ShieldAdvanced, WAF, ELB, EC2 , DataConnect , VPC peering, DynamoDB , λ , s3  Learn how William Hill built a high-performance DDOS and Edge Protection platform using AWS Services that has been effective in mitigating a 177 GBPS DDOS attacks and 48 million attempted exploits (in 2019) from across 121,000 IPs and 196 countries. In addition, the company successfully blocked 63 million requests from 180,000 IPs from 202 countries, all trying to scrape pricing and event data, which if successful, is highly detrimental to the business as well as to customer experience. |
 |[Infor - Ingest and Analyze Millions of Application Events Daily for Compliance Violations](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#ingest-and-analyze-millions-of-application-events-daily-for-compliance-violations) | S3 SQS , Kinesis, Fargate, EMR, EventBridge , Aurora | Infor modernized a single-tenant application deployed for individual customers into a multi-tenant scalable application capable of ingesting, storing, and analyzing millions of customer application events per day. |
 |[HaloDoc - Monolith to Microservices](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#halodoc---monolith-to-microservices) | EC2 , RDS ,  SNS λ , Kafka , Flink , Grafana, Kibana , Redshift, S3, Rekognition| evolved their monolithic back end into decoupled microservices with Amazon EC2 & SQS, adopted serverless to cost effectively support new user functionality with AWS Lambda, and manage the high volume and velocity of data with Amazon DynamoDB, RDS and Redshift. |
-|[processes 55TB of data per day]() | S3 SNS λ | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
+|[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
 |[]() | S3 SNS λ |  |
 
 # Nielsen - processes 55TB of data per day
-![]()
-* 
+![RateLimiting](https://user-images.githubusercontent.com/8856857/104970934-48760400-5a41-11eb-9d6b-4c877110419a.png)
+* 250 billion events / day 
+* event Files -> S3 bucket -> EMR Spark (processed) -> S3 -> λ (Processing and spitting it / uploads)
+* Files (metadata) -> SQS -> λ -> RDS -> λ -> Spark
+* RDS -> workmanager λ -> Fanout to many λs -> upload to networks
+* λ -> SQS (processed / retried) 
+* Scale 
+* Rate Limiting per network - killing external servers , partner servers needed rate limiting
+* Cost -> Making λs more efficient , memory footprint to optimize, number of hhtp connections sent 
 
 # HaloDoc - Monolith to Microservices
 ![HaloDoc1](https://user-images.githubusercontent.com/8856857/104859425-65470480-5979-11eb-9d05-3e0f52647039.png)
