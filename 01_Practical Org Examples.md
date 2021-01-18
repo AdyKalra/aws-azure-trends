@@ -27,7 +27,12 @@
 |[Infor - Ingest and Analyze Millions of Application Events Daily for Compliance Violations](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#ingest-and-analyze-millions-of-application-events-daily-for-compliance-violations) | S3 SQS , Kinesis, Fargate, EMR, EventBridge , Aurora | Infor modernized a single-tenant application deployed for individual customers into a multi-tenant scalable application capable of ingesting, storing, and analyzing millions of customer application events per day. |
 |[HaloDoc - Monolith to Microservices](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#halodoc---monolith-to-microservices) | EC2 , RDS ,  SNS λ , Kafka , Flink , Grafana, Kibana , Redshift, S3, Rekognition| evolved their monolithic back end into decoupled microservices with Amazon EC2 & SQS, adopted serverless to cost effectively support new user functionality with AWS Lambda, and manage the high volume and velocity of data with Amazon DynamoDB, RDS and Redshift. |
 |[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
+|[scalable, elastic platform]() | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
 |[]() | S3 SNS λ |  |
+
+# HSBC - scalable, elastic platform with Security
+![]()
+* 
 
 # Nielsen - processes 55TB of data per day
 ![RateLimiting](https://user-images.githubusercontent.com/8856857/104970934-48760400-5a41-11eb-9d6b-4c877110419a.png)
