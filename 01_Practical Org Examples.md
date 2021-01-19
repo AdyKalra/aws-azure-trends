@@ -29,10 +29,15 @@
 |[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
 |[scalable, elastic platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#hsbc---scalable-elastic-platform-with-security) | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
 |[]() | S3 SNS λ |  |
+|[]() | S3 SNS λ |  |
 
 # HSBC - scalable, elastic platform with Security
-![]()
-* 
+![HSBC](https://user-images.githubusercontent.com/8856857/104980844-a7487700-5a5b-11eb-99a7-a144bf089c59.png)
+* Scaling issues (Using Direct connect from on prem to Bank)- VPC endpoint (λ)-> Proxies -> DC -> Bank
+* deploy workloads in and out of the bank
+* create VPC's as needed
+* Proxies controled by security (whitelist domains) , λ -> VPC endpoint -> Internet gateway -> extrenal (e.g push notifications)
+* Terraform / SAM templates for deployments - configure network/ CIDR blocks , build infra , deploy code on infra
 
 # Nielsen - processes 55TB of data per day
 ![RateLimiting](https://user-images.githubusercontent.com/8856857/104970934-48760400-5a41-11eb-9d6b-4c877110419a.png)
