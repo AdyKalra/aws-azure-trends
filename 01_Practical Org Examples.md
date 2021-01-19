@@ -28,8 +28,13 @@
 |[HaloDoc - Monolith to Microservices](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#halodoc---monolith-to-microservices) | EC2 , RDS ,  SNS λ , Kafka , Flink , Grafana, Kibana , Redshift, S3, Rekognition| evolved their monolithic back end into decoupled microservices with Amazon EC2 & SQS, adopted serverless to cost effectively support new user functionality with AWS Lambda, and manage the high volume and velocity of data with Amazon DynamoDB, RDS and Redshift. |
 |[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
 |[scalable, elastic platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#hsbc---scalable-elastic-platform-with-security) | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
+|[highly elastic solution combined with low maintenance and running costs]() | S3 SNS λ | how Temenos used AWS managed services like DynamoDB and Fargate with serverless technology to build their T24 Transact banking system, and achieve a highly elastic solution combined with low maintenance and running costs.
+ |
 |[]() | S3 SNS λ |  |
-|[]() | S3 SNS λ |  |
+
+# Temenos - highly elastic solution combined with low maintenance and running costs
+![]()
+* 
 
 # HSBC - scalable, elastic platform with Security
 ![HSBC](https://user-images.githubusercontent.com/8856857/104980844-a7487700-5a5b-11eb-99a7-a144bf089c59.png)
