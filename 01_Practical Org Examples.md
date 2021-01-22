@@ -31,6 +31,9 @@
 |[highly elastic solution combined with low maintenance and running costs](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#temenos---highly-elastic-solution-combined-with-low-maintenance-and-running-costs) | APIG , ELB, Fargate , RDS , Kinesis , λ , DynamoDB | how Temenos used AWS managed services like DynamoDB and Fargate with serverless technology to build their T24 Transact banking system, and achieve a highly elastic solution combined with low maintenance and running costs.|
 |[]() | S3 SNS λ |  |
 
+[Back to top :arrow_up:](#orgexamples)
+[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+
 # Temenos - highly elastic solution combined with low maintenance and running costs
 ![Temenos](https://user-images.githubusercontent.com/8856857/105450813-65c00200-5ccf-11eb-8378-0cc110f99fcc.png)
 * Elastic Scalability - Unpredictable loads -> burst out and scale back down 
