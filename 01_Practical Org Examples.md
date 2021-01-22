@@ -32,7 +32,7 @@
 |[]() | S3 SNS λ |  |
 
 # Temenos - highly elastic solution combined with low maintenance and running costs
-![]()
+![Temenos](https://user-images.githubusercontent.com/8856857/105450813-65c00200-5ccf-11eb-8378-0cc110f99fcc.png)
 * Elastic Scalability - Unpredictable loads -> burst out and scale back down 
   * Clients -> APIG -> Endpoints routed to -> ELB (route to the correct container)-> Fargate (host containers)-> persist the data into RDS 
   * Events from RDS pused to -> Kinesis -> λ ( provide optimised data model) -> DynamoDB
