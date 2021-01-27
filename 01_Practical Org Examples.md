@@ -29,7 +29,7 @@
 |[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
 |[scalable, elastic platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#hsbc---scalable-elastic-platform-with-security) | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
 |[highly elastic solution combined with low maintenance and running costs](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#temenos---highly-elastic-solution-combined-with-low-maintenance-and-running-costs) | APIG , ELB, Fargate , RDS , Kinesis , λ , DynamoDB | how Temenos used AWS managed services like DynamoDB and Fargate with serverless technology to build their T24 Transact banking system, and achieve a highly elastic solution combined with low maintenance and running costs.|
-|[Using Chime SDK to Power Coach-led Virtual Workouts with OTlive](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#orangetheory-fitness----using-chime-sdk-to-power-coach-led-virtual-workouts-with-otlive) | S3 SNS λ |  |
+|[Using Chime SDK to Power Coach-led Virtual Workouts with OTlive](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#orangetheory-fitness----using-chime-sdk-to-power-coach-led-virtual-workouts-with-otlive) | S3 SNS λ |  how they built a global, scalable virtual workout classes system using native AWS services. You will learn how the Amazon Chime SDK is used to stream real-time video between coach and participants. How Chime SDK’s websockets are used to send heart rate telemetry in real time from the members to the coach. Finally, you will learn how the second by second heart rate telemetry is streamed to Firehose for later processing in OTF’s data lake. |
 |[]() | S3 SNS λ |  |
 
 [Back to top :arrow_up:](#orgexamples)
@@ -37,6 +37,16 @@
 
 
 # Orangetheory Fitness -  Using Chime SDK to Power Coach-led Virtual Workouts with OTlive
+![Chime](https://user-images.githubusercontent.com/8856857/106069772-39850500-6157-11eb-9e58-4dab655312d6.png)
+* virtual classes for fitness centres
+* Member -> Cognito (authenticate) -> APIG -> λ -> Aurora (retrieve class details)
+* Coach -> Cognito (authenticate) -> APIG -> λ -> Aurora (retrieve class details)
+* Member -> ChimeSDK (Video streaming / connection) -> Coach
+* Member -> websockets of ChimeSDK (low latency / edge) -> check Heart rate ->  Coach
+* Data (Hear trate etc) -> Kinesis -> S3 / Data Lake 
+
+[Back to top :arrow_up:](#orgexamples)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Temenos - highly elastic solution combined with low maintenance and running costs
 ![Temenos](https://user-images.githubusercontent.com/8856857/105450813-65c00200-5ccf-11eb-8378-0cc110f99fcc.png)
