@@ -29,10 +29,15 @@
 |[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
 |[scalable, elastic platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#hsbc---scalable-elastic-platform-with-security) | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
 |[highly elastic solution combined with low maintenance and running costs](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#temenos---highly-elastic-solution-combined-with-low-maintenance-and-running-costs) | APIG , ELB, Fargate , RDS , Kinesis , λ , DynamoDB | how Temenos used AWS managed services like DynamoDB and Fargate with serverless technology to build their T24 Transact banking system, and achieve a highly elastic solution combined with low maintenance and running costs.|
+|[Using Chime SDK to Power Coach-led Virtual Workouts with OTlive]() | S3 SNS λ |  |
+costs.|
 |[]() | S3 SNS λ |  |
 
 [Back to top :arrow_up:](#orgexamples)
 [Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+
+
+# Orangetheory Fitness -  Using Chime SDK to Power Coach-led Virtual Workouts with OTlive
 
 # Temenos - highly elastic solution combined with low maintenance and running costs
 ![Temenos](https://user-images.githubusercontent.com/8856857/105450813-65c00200-5ccf-11eb-8378-0cc110f99fcc.png)
