@@ -29,12 +29,12 @@
 |[processes 55TB of data per day](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#nielsen---processes-55tb-of-data-per-day) | S3 SQS λ EMR Spark, Fanout, RDS | Nielsen Marketing Cloud processes 55TB of data per day while maintaining quality, performance, and cost using a fully automated serverless pipeline. |
 |[scalable, elastic platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#hsbc---scalable-elastic-platform-with-security) | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
 |[highly elastic solution combined with low maintenance and running costs](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#temenos---highly-elastic-solution-combined-with-low-maintenance-and-running-costs) | APIG , ELB, Fargate , RDS , Kinesis , λ , DynamoDB | how Temenos used AWS managed services like DynamoDB and Fargate with serverless technology to build their T24 Transact banking system, and achieve a highly elastic solution combined with low maintenance and running costs.|
-|[Using Chime SDK to Power Coach-led Virtual Workouts with OTlive]() | S3 SNS λ |  |
+|[Using Chime SDK to Power Coach-led Virtual Workouts with OTlive](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#orangetheory-fitness----using-chime-sdk-to-power-coach-led-virtual-workouts-with-otlive) | S3 SNS λ |  |
 costs.|
 |[]() | S3 SNS λ |  |
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 
 # Orangetheory Fitness -  Using Chime SDK to Power Coach-led Virtual Workouts with OTlive
@@ -50,7 +50,7 @@ costs.|
  * Cloud Formation scripts to spin up predefined architecture
  
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # HSBC - scalable, elastic platform with Security
 ![HSBC](https://user-images.githubusercontent.com/8856857/104980844-a7487700-5a5b-11eb-99a7-a144bf089c59.png)
@@ -84,7 +84,7 @@ costs.|
 * Image repo -> image uploaded to s3 -> rekognition (unsafe images) 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Ingest and Analyze Millions of Application Events Daily for Compliance Violations
 ![Ingest](https://user-images.githubusercontent.com/8856857/104660446-a2fa2200-571a-11eb-856d-f6f6935d69c9.png)
@@ -93,7 +93,7 @@ costs.|
 * Transient and long running jobs on EMR cluster
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # WilliamHill - high-performance DDOS and Edge Protection platform
 ![WH](https://user-images.githubusercontent.com/8856857/104408133-82658700-55b7-11eb-88a1-4f3e45e5de42.png)
@@ -104,7 +104,7 @@ costs.|
 * VPC -> VPC peering (that has 7 different channel accounts where appln sits) -> VPC * 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Zoho - monitoring system that serves 50K requests per minute
 ![site24/7](https://user-images.githubusercontent.com/8856857/104406910-8cd25180-55b4-11eb-88cc-c52683448f23.png)
@@ -117,7 +117,7 @@ costs.|
 * logs of traffic from CloudFront -> S3 -> logs to Onprem analysis servers -> analysed ips sent to DyanamoDB, λ runs inspects the table for new / expired entries -> updates WAF filters  
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Levels Beyond: Digital Content Orchestration
 ![Content Orchestration](https://user-images.githubusercontent.com/8856857/104250543-ea39a600-54c1-11eb-8ec3-a18f946dc6e6.png)
@@ -125,7 +125,7 @@ costs.|
 * Ingest into Reach Engine (EC2, EKS)- ( allow users to replay content , view metadata, search metadata, visualization of data from Rkognition) 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Spoon Radio - Audio Live Streaming and Batch Processing Architecture on AWS 
 ![Spoon](https://user-images.githubusercontent.com/8856857/104137926-8dbc8500-53f4-11eb-8520-2e04a25851a4.png)
@@ -134,7 +134,7 @@ costs.|
 * Listeners listen through API server 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # PayGo Leveraging Smart Meters to Help Customers Conserve Energy
 ![PayGo](https://user-images.githubusercontent.com/8856857/103969758-c6711a00-51ba-11eb-9a19-6298d2d6fc50.png)
@@ -145,13 +145,13 @@ costs.|
 * Next steps -> SQL server to RDS , Infrastructure automation and orchestration - for building environemnets
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Optimize Delivery of Trending, Personalized News 
 * Gunosy is a news curation application that covers a wide range of topics, such as entertainment, sports, politics, and gourmet news. The application has been installed more than 20 million times. Gunosy aims to provide people with the content they want without the stress of dealing with a large influx of information. We analyze user attributes, such as gender and age, and past activity logs like click-through rate (CTR). We combine this information with article attributes to provide trending, personalized news articles to users.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### Why does Gunosy need real-time processing?
 * Users need fresh and personalized news. There are two constraints to consider when delivering appropriate articles:
@@ -163,7 +163,7 @@ costs.|
  * Trends analysis/identification: Optimize delivering articles using recent (real-time) user activity logs—to incorporate the latest trends from all users.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.mdd)
 
 ### Solution
 * The following diagrams depict the architecture for optimizing article delivery by processing real-time user activity logs
@@ -175,14 +175,14 @@ costs.|
  * Execute ad hoc or heavy queries.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 
 # Scrape 300k prices per day from Google Flights
 * Brisk Voyage finds cheap, last-minute weekend trips for our members. The basic idea is that we continuously check a bunch of flight and hotel prices, and when we find a trip that’s a low-priced outlier, we send an email with booking instructions.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### AWS Simple Queue Service (SQS)
 * We use SQS to serve a queue of URLs to crawl. Google Flights URLs look like this: https://www.google.com/flights?hl=en#flt=BOS.JFK,LGA,EWR.2020-11-13*JFK,LGA,EWR.BOS.2020-11-16;c:USD;e:1;sd:1;t:f.
@@ -190,7 +190,7 @@ costs.|
   * A single SQS queue stores all Google Flights URLs that need to be crawled. When the crawler runs, it will pick off a message from the queue. Order is not important, so a standard queue (not a FIFO) is used. 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### AWS Lambda (using Chalice)
 * Lambda is where the crawler actually runs. We use Chalice, which is an excellent Lambda microframework for Python, to deploy functions to Lambda. 
@@ -203,7 +203,7 @@ costs.|
   * This not only causes compute inefficiency, but increases bandwidth drastically as the browser cache is destroyed every time the function restarts. There are ways around this, but in our experience, they have lead lots of extra complexity.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### A note on Lambda costs
 * Lambda costs $0.00001667/GB/second, while many EC2 instances cost one-sixth of that. We currently pay around $50/month for Lambda, so this would mean we could substantially reduce these costs. 
@@ -211,7 +211,7 @@ costs.|
   * Second, it’s what the rest of our stack is built on. Less technology means less cognitive overhead. If the number of pages we crawl ramps up, it will make sense to reconsidering EC2 or a similar compute service. At this point, I think an extra $40 per month ($50 on Lambda vs ~$10 on EC2) is worth the simplicity for us.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### Pyppeteer
 * Pyppeteer is a Python library for interacting with Puppeteer, a headless Chrome API. Since Google Flights requires Javascript to load prices, it is necessary to actually render the full page. Each of the 50 crawl functions launches its own copy of a headless Chrome browser, which is controlled with Pyppeteer.
@@ -223,7 +223,7 @@ costs.|
   * This means that we want to keep the instance alive as long as possible, and crawl as many trips as we can in order to preserve the cache. Because it’s advantageous to persist functions to retain the cache, crawl‘s timeout is 15 minutes, which is the maximum that AWS currently allows. 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### DynamoDB
 * After it’s extracted from the page, we have to store the flight data. We chose DynamoDB for this because it has on-demand scaling. This was important for us, as we were uncertain about what kinds of loads we would need. It’s also cheap, and 25GB comes free under AWS’s Free Tier.
@@ -232,7 +232,7 @@ costs.|
   * Due to this limitation on indices, DynamoDB works best when the usage is fully thought-out beforehand. It took us a couple tries to get the table design right. In retrospect, DynamoDB is a little inflexible for the kind of product we’re building. Now that Aurora Serverless offers PostgreSQL, it may be wise for us to switch to that at some point.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### Monitoring and testing
 * We use Dashbird for monitoring the crawler and everything else that’s run under Lambda. Good monitoring is a requirement for scraping applications because page structure changes are a constant danger. At any time (even multiple times per day, as we’ve seen with Google Flights recently) the page structure can change, which breaks the crawler. We need to be alerted when this occurs. We have two separate mechanisms to track this:
@@ -240,7 +240,7 @@ costs.|
 1. A GitHub Action that runs every 3 hours that runs a test crawl and verifies the results make sense. Since that crawler isn’t always running, this alerts us when Google Flights changes their page structure outside of operating hours. This way, the crawler can be fixed prior to starting for the day.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # AWS Lambda Example showing Media Transformation
 * Cross-device development is a huge concern when it comes to application development. Facilitating this comes at a high cost and manual tasks which hinders the efficiency of development teams.
@@ -258,7 +258,7 @@ costs.|
 ![Transform Media on Upload Example using AWS Lambda](https://www.simform.com/wp-content/uploads/2018/08/Transform-Media-on-Upload-Example-using-AWS-Lambda.png)
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 ### The major areas where AWS Lambda helps are
 
@@ -267,7 +267,7 @@ costs.|
 * With Lambda, each request is initiated if the required image is not available. This means each request is not affected in any way with the previous failover.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Deriving Multiple Data Format from Single Source
 * Many times there comes a requirement when a single object is required in multiple formats. AWS Lambda along with S3 & SNS helps in building a general purpose event-driven system which processes the data in parallel.
@@ -287,7 +287,7 @@ costs.|
 * A master media file which needs to be converted into multiple formats.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Real-Time Data Processing Example using AWS Lambda
 * Processing data in real time and responding to them is highly imperative for modern business requirements. To enable this, analyzing the metrics data in real time is critical. But Amazon Kinesis Stream and AWS Lambda have made it possible!
@@ -318,7 +318,7 @@ costs.|
 * Bustle processes high volume of site metric data in real time. This allows them to capture more data quickly. Which in turn helps them in analyzing how new features are affecting the website audience. Not only that, they have been able to monitor user engagement which has empowered marketing to make decisions driven by data.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Custom Logic Workflows using AWS Lambda
 * We have often come across complex applications (e-commerce, analytics software, ERP, etc) which consists of complex repeatable scenarios that need to be executed in a response to some event. In other words, workflows.
@@ -345,7 +345,7 @@ costs.|
 * Here’s another interesting example by Alex Casalboni where he developed a state machine which estimates the best power configuration to minimize the cost for any given Lambda function.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Change Data Capture with AWS Lambda
 * Many times it is required to analyze and keep track of the changes made in the database. Or maybe you want to process data before it is stored in the database. With AWS Lambda & DynamoDB Streams this is possible.
@@ -374,7 +374,7 @@ costs.|
 * For this, whenever new books are added to the database, an AWS Lambda function will trigger which will notify SNS. This, in turn, will send mass emails to the students.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # AWS Lambda Example showing Custom Alexa Skills
 * Most of us are familiar with Alexa, popularized with Amazon’s multiple lines of Echo smart speakers and devices.
@@ -399,7 +399,7 @@ costs.|
 * Need some more inspiration? Check out this list of 50 most useful Alexa Skills.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Automated Stored Procedures using AWS Lambda
 * To derive multiple formats of data, sometimes users need to do compute work. This compute work is based on the data which is being inserted, updated or deleted to the database. However, oftentimes they do not want the compute work to be done on the compute resources but on the database itself.
@@ -436,7 +436,7 @@ costs.|
   * Number of automotive capabilities
   
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Serverless Image Recognition Engine
 * Imagine you have a website where people can upload images. As soon as the images are uploaded, you want the images to go through a set of workflow actions.
@@ -463,7 +463,7 @@ costs.|
 * Cropping mechanism where the system identifies the focal point and crops automatically
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Serverless Text-to-Speech Example
 * With the advent of AI enabled devices, text-to-speech has become imperative for modern applications. Medium being the latest one in facilitating TTS functionality. More to that, speech synthesis is a tricky subject and the list of interpretation challenges is endless.
@@ -488,7 +488,7 @@ costs.|
 * After that, an MP3 file is stored in the S3 bucket with the reference URL and the information about the same will be stored in the DynamoDB.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Personalized Content Delivery through AWS Lambda
 * Today most of the application facilitates the personalized content and news feed. This is possible because the personalized user experience is becoming an inevitable feature and accessing & monitoring of user touch points is becoming easy.
@@ -513,7 +513,7 @@ costs.|
  * Admin API: This is for the editors to manage things manually from the backend, for example, change the tagging, turn off if it’s unsuitable for the students, etc.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Lambda Architecture for Batch and Stream Processing
 
@@ -538,7 +538,7 @@ entire dataset which can be aggregated, merged or joined.
 * Customer can use a Hadoop based stream processing application for analytics, such as Spark Streaming on Amazon EMR. 
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
 
 # Optimize Delivery of Trending, Personalized News Using Amazon Kinesis and Related Services
 * How to convert an openly available dataset called MIMIC-III, which consists of de-identified medical data for about 40,000 patients, into an open source data model known as the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM). 
@@ -568,4 +568,4 @@ entire dataset which can be aggregated, merged or joined.
 * The only code that is unique to each execution is any diffs between the CloudFormation templates (e.g., cluster size and SQL file locations) and the transformation SQL that resides in S3 buckets. The Spark jar that is executed as an EMR step is reused across all three executions.
 
 [Back to top :arrow_up:](#orgexamples)
-[Edit this file](https://github.com/AdyKalra/awesome-of-awesomes/edit/master/README.md)
+[Edit this file](https://github.com/AdyKalra/awstrends/edit/master/01_Practical%20Org%20Examples.md)
