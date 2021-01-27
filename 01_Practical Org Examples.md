@@ -30,7 +30,6 @@
 |[scalable, elastic platform](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#hsbc---scalable-elastic-platform-with-security) | S3 SNS λ | HSBC is building a scalable, elastic platform while maintaining bank-grade security.  |
 |[highly elastic solution combined with low maintenance and running costs](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#temenos---highly-elastic-solution-combined-with-low-maintenance-and-running-costs) | APIG , ELB, Fargate , RDS , Kinesis , λ , DynamoDB | how Temenos used AWS managed services like DynamoDB and Fargate with serverless technology to build their T24 Transact banking system, and achieve a highly elastic solution combined with low maintenance and running costs.|
 |[Using Chime SDK to Power Coach-led Virtual Workouts with OTlive](https://github.com/AdyKalra/awstrends/blob/master/01_Practical%20Org%20Examples.md#orangetheory-fitness----using-chime-sdk-to-power-coach-led-virtual-workouts-with-otlive) | S3 SNS λ |  |
-costs.|
 |[]() | S3 SNS λ |  |
 
 [Back to top :arrow_up:](#orgexamples)
