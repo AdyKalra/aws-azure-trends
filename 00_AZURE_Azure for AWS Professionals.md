@@ -8,6 +8,11 @@
 |Auto Scaling	|Virtual Machine Scale Sets	|Allows you to automatically change the number of VM instances. You set defined metric and thresholds that determine if the platform adds or removes instances.|
 |VMware Cloud on AWS	|Azure VMware Solution	|Seamlessly move VMware-based workloads from your datacenter to Azure and integrate your VMware environment with Azure. Keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services. Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.|
 |Parallel Cluster|	CycleCloud	|Create, manage, operate, and optimize HPC and big compute clusters of any scale|
+|||**Containers and container orchestrators**|
+|Elastic Container Service (ECS) Fargate |	Container Instances	|Azure Container Instances is the fastest and simplest way to run a container in Azure, without having to provision any virtual machines or adopt a higher-level orchestration service.|
+|Elastic Container Registry	|Container Registry	|Allows customers to store Docker formatted images. Used to create all types of container deployments on Azure.|
+|Elastic Kubernetes Service (EKS)|	Kubernetes Service (AKS)	|Deploy orchestrated containerized applications with Kubernetes. Simplify monitoring and cluster management through auto upgrades and a built-in operations console. See AKS solution journey.|
+|App Mesh	|Service Fabric Mesh	|Fully managed service that enables developers to deploy microservices applications without managing virtual machines, storage, or networking.|
 |||**Analytics and visualization**|
 |Kinesis Analytics	| Stream Analytics , Azure Data Explorer, Data Lake Analytics| Data Lake Store	Storage and analysis platforms that create insights from large quantities of data, or data that originates from many sources.|
 |QuickSight|Power BI |Business intelligence tools that build visualizations, perform ad hoc analysis, and develop business insights from data.|
