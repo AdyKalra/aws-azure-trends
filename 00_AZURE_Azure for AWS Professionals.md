@@ -78,6 +78,6 @@
 |Application Discovery Service	|Migrate	|Assesses on-premises workloads for migration to Azure, performs performance-based sizing, and provides cost estimations.|
 |EC2 Systems Manager|	Monitor	|Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
 |Personal Health Dashboard	|Resource Health|	Provides detailed information about the health of resources as well as recommended actions for maintaining resource health.|
-|CloudTrail	|Monitor	Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
+|CloudTrail	|Monitor|	Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
 |CloudWatch	|Application Insights	|Application Insights, is an extensible Application Performance Management (APM) service for developers and DevOps professionals.|
 |Cost Explorer	|Cost Management	|Optimize cloud costs while maximizing cloud potential.|
