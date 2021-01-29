@@ -64,6 +64,15 @@
 |Dedicated network	- Direct Connect	|ExpressRoute	|Establishes a dedicated, private network connection from a location to the cloud provider (not over the Internet).|
 | Load balancing	- Network Load Balancer|	Load Balancer	|Azure Load Balancer load balances traffic at layer 4 (TCP or UDP). Standard Load Balancer also supports cross-region or global load balancing.|
 |	Application Load Balancer	|Application Gateway	|Application Gateway is a layer 7 load balancer. It supports SSL termination, cookie-based session affinity, and round robin for load-balancing traffic.|
+|||**Authentication and authorization**|
+| Identity and Access Management (IAM)|	Azure Active Directory	|Allows users to securely control access to services and resources while offering data security and protection. Create and manage users and groups, and use permissions to allow and deny access to resources.|
+|Identity and Access Management (IAM)|	Azure role-based access control|	Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.|
+|Organizations	|Subscription Management + Azure RBAC	|Security policy and role management for working with multiple accounts.|
+|Multi-Factor Authentication	|Multi-Factor Authentication|	Safeguard access to data and applications while meeting user demand for a simple sign-in process.|
+|Directory Service	|Azure Active Directory Domain Services	|Provides managed domain services such as domain join, group policy, LDAP, and Kerberos/NTLM authentication that are fully compatible with Windows Server Active Directory.|
+|Cognito	|Azure Active Directory |B2C	A highly available, global, identity management service for consumer-facing applications that scales to hundreds of millions of identities.|
+|Organizations	|Policy	Azure |Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service level agreements.|
+|Organizations	|Management Groups	|Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale, no matter what type of subscriptions you have.|
 |||**Marketplace**|
 |AWS Marketplace |	Azure Marketplace |	Easy-to-deploy and automatically configured third-party applications, including single virtual machine or multiple virtual machine solutions.|
 |||**AI and machine learning**|
