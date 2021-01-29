@@ -15,6 +15,10 @@
 | NoSQL / Document	DynamoDB , SimpleDB , Amazon DocumentDB |	Cosmos DB	| A globally distributed, multi-model database that natively supports multiple data models: key-value, documents, graphs, and columnar.|
 | Caching	ElastiCache	| Cache for Redis	| An in-memory–based, distributed caching service that provides a high-performance store typically used to offload nontransactional work from a database.|
 | Database migration	Database Migration Service	|Database Migration Service	|Migration of database schema and data from one database format to a specific database technology in the cloud.|
+|||**Messaging and eventing**|
+|Simple Queue Service (SQS)	|Queue Storage|	Provides a managed message queueing service for communicating between decoupled application components.|
+|Simple Queue Service (SQS)	|Service Bus	|Supports a set of cloud-based, message-oriented middleware technologies including reliable message queuing and durable publish/subscribe messaging.|
+|Amazon EventBridge	|Event Grid	|A fully managed event routing service that allows for uniform event consumption using a publish/subscribe model.|
 |||**DevOps and application monitoring**|
 | CloudWatch, X-Ray	|Monitor|	Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
 | CodeDeploy, CodeCommit, CodePipeline	|DevOps	|A cloud service for collaborating on code development.|
