@@ -61,4 +61,13 @@
 |Greengrass	|IoT Edge|	Deploy cloud intelligence directly on IoT devices to run in on-premises scenarios.|
 |Kinesis Firehose, Kinesis Streams	|Event Hubs|	Services that allow the mass ingestion of small data inputs, typically from devices and sensors, to process and route the data.|
 |IoT Things Graph	|Digital Twins	|Azure Digital Twins is an IoT service that helps you create comprehensive models of physical environments. Create spatial intelligence graphs to model the relationships and interactions between people, places, and devices. Query data from a physical space rather than disparate sensors.|
-
+|||**Management**|
+| Trusted Advisor	|Advisor|	Provides analysis of cloud resource configuration and security so subscribers can ensure they're making use of best practices and optimum configurations.|
+|Usage and Billing Report	|Billing API	|Services to help generate, monitor, forecast, and share billing data for resource usage by time, organization, or product resources.|
+|Management Console	|Portal	|A unified management console that simplifies building, deploying, and operating your cloud resources.|
+|Application Discovery Service	|Migrate	|Assesses on-premises workloads for migration to Azure, performs performance-based sizing, and provides cost estimations.|
+|EC2 Systems Manager|	Monitor	|Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
+|Personal Health Dashboard	|Resource Health|	Provides detailed information about the health of resources as well as recommended actions for maintaining resource health.|
+|CloudTrail	|Monitor	Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
+|CloudWatch	|Application Insights	|Application Insights, is an extensible Application Performance Management (APM) service for developers and DevOps professionals.|
+|Cost Explorer	|Cost Management	|Optimize cloud costs while maximizing cloud potential.|
