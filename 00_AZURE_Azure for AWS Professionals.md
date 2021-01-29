@@ -15,6 +15,15 @@
 | NoSQL / Document	DynamoDB , SimpleDB , Amazon DocumentDB |	Cosmos DB	| A globally distributed, multi-model database that natively supports multiple data models: key-value, documents, graphs, and columnar.|
 | Caching	ElastiCache	| Cache for Redis	| An in-memory–based, distributed caching service that provides a high-performance store typically used to offload nontransactional work from a database.|
 | Database migration	Database Migration Service	|Database Migration Service	|Migration of database schema and data from one database format to a specific database technology in the cloud.|
+|||**DevOps and application monitoring**|
+| CloudWatch, X-Ray	|Monitor|	Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
+| CodeDeploy, CodeCommit, CodePipeline	|DevOps	|A cloud service for collaborating on code development.|
+|Developer Tools|	Developer Tools	|Collection of tools for building, debugging, deploying, diagnosing, and managing multiplatform scalable apps and services.|
+|CodeBuild	|DevOps	|Fully managed build service that supports continuous integration and deployment.|
+|Command Line Interface	|CLI|PowerShell	Built on top of the native REST API across all cloud services, various programming language-specific wrappers provide easier ways to create solutions.|
+|AWS CloudShell	|Azure Cloud Shell|	Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources. It gives you the flexibility to choose the shell experience that best suits the way you work, either Bash or PowerShell.|
+|OpsWorks (Chef-based)|	Automation	|Configures and operates applications of all shapes and sizes, and provides templates to create and manage a collection of resources.|
+|CloudFormation	|Resource Manager , VM extensions , Azure Automation	|Provides a way for users to automate the manual, long-running, error-prone, and frequently repeated IT tasks.|
 |||**Containers and container orchestrators**|
 |Elastic Container Service (ECS) Fargate |	Container Instances	|Azure Container Instances is the fastest and simplest way to run a container in Azure, without having to provision any virtual machines or adopt a higher-level orchestration service.|
 |Elastic Container Registry	|Container Registry	|Allows customers to store Docker formatted images. Used to create all types of container deployments on Azure.|
@@ -47,6 +56,3 @@
 |Polly, Transcribe |	Speech Services |	Enables both Speech to Text, and Text into Speech capabilities. |
 |Rekognition	|Cognitive Services	| Computer Vision: Extract information from images to categorize and process visual data. Face: Detect, identify, and analyze faces in photos. Emotions: Recognize emotions in images. |
 |Skills Kit|	Virtual Assistant	|The Virtual Assistant Template brings together a number of best practices we've identified through the building of conversational experiences and automates integration of components that we've found to be highly beneficial to Bot Framework developers.|
-||||
-||||
-|||****|
