@@ -56,6 +56,14 @@
 |Cognito	|App Center	|Provides authentication capabilities for mobile applications.|
 |Device Farm	|App Center	|Provides services to support testing mobile applications.|
 |Mobile Analytics	|App Center|	Supports monitoring, and feedback collection for the debugging and analysis of a mobile application service quality.|
+|||**Networking**|
+|Cloud virtual networking	- Virtual Private Cloud (VPC)|	Virtual Network|	Provides an isolated, private environment in the cloud. Users have control over their virtual networking environment, including selection of their own IP address range, creation of subnets, and configuration of route tables and network gateways.|
+|Cross-premises connectivity	- VPN Gateway|	VPN Gateway	|Connects Azure virtual networks to other Azure virtual networks, or customer on-premises networks (Site To Site). Allows end users to connect to Azure services through VPN tunneling (Point To Site).|
+|DNS management	- Route 53|	DNS	|Manage your DNS records using the same credentials and billing and support contract as your other Azure services|
+| 53	| Traffic Manager	|A service that hosts domain names, plus routes users to Internet applications, connects user requests to datacenters, manages traffic to apps, and improves app availability with automatic failover.|
+|Dedicated network	- Direct Connect	|ExpressRoute	|Establishes a dedicated, private network connection from a location to the cloud provider (not over the Internet).|
+| Load balancing	- Network Load Balancer|	Load Balancer	|Azure Load Balancer load balances traffic at layer 4 (TCP or UDP). Standard Load Balancer also supports cross-region or global load balancing.|
+|	Application Load Balancer	|Application Gateway	|Application Gateway is a layer 7 load balancer. It supports SSL termination, cookie-based session affinity, and round robin for load-balancing traffic.|
 |||**Marketplace**|
 |AWS Marketplace |	Azure Marketplace |	Easy-to-deploy and automatically configured third-party applications, including single virtual machine or multiple virtual machine solutions.|
 |||**AI and machine learning**|
