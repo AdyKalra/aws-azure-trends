@@ -8,6 +8,8 @@
 |Auto Scaling	|Virtual Machine Scale Sets	|Allows you to automatically change the number of VM instances. You set defined metric and thresholds that determine if the platform adds or removes instances.|
 |VMware Cloud on AWS	|Azure VMware Solution	|Seamlessly move VMware-based workloads from your datacenter to Azure and integrate your VMware environment with Azure. Keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services. Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.|
 |Parallel Cluster|	CycleCloud	|Create, manage, operate, and optimize HPC and big compute clusters of any scale|
+|||**Serverless**|
+|Lambda	|Functions	|Integrate systems and run backend processes in response to events or schedules without provisioning or managing servers.|
 |||**Containers and container orchestrators**|
 |Elastic Container Service (ECS) Fargate |	Container Instances	|Azure Container Instances is the fastest and simplest way to run a container in Azure, without having to provision any virtual machines or adopt a higher-level orchestration service.|
 |Elastic Container Registry	|Container Registry	|Allows customers to store Docker formatted images. Used to create all types of container deployments on Azure.|
