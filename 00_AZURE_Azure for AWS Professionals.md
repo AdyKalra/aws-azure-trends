@@ -56,3 +56,9 @@
 |Polly, Transcribe |	Speech Services |	Enables both Speech to Text, and Text into Speech capabilities. |
 |Rekognition	|Cognitive Services	| Computer Vision: Extract information from images to categorize and process visual data. Face: Detect, identify, and analyze faces in photos. Emotions: Recognize emotions in images. |
 |Skills Kit|	Virtual Assistant	|The Virtual Assistant Template brings together a number of best practices we've identified through the building of conversational experiences and automates integration of components that we've found to be highly beneficial to Bot Framework developers.|
+|||**Internet of things (IoT)**|
+|IoT	|IoT Hub	|A cloud gateway for managing bidirectional communication with billions of IoT devices, securely and at scale.|
+|Greengrass	|IoT Edge|	Deploy cloud intelligence directly on IoT devices to run in on-premises scenarios.|
+|Kinesis Firehose, Kinesis Streams	|Event Hubs|	Services that allow the mass ingestion of small data inputs, typically from devices and sensors, to process and route the data.|
+|IoT Things Graph	|Digital Twins	|Azure Digital Twins is an IoT service that helps you create comprehensive models of physical environments. Create spatial intelligence graphs to model the relationships and interactions between people, places, and devices. Query data from a physical space rather than disparate sensors.|
+
