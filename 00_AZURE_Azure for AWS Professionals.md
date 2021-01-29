@@ -10,6 +10,11 @@
 |Parallel Cluster|	CycleCloud	|Create, manage, operate, and optimize HPC and big compute clusters of any scale|
 |||**Serverless**|
 |Lambda	|Functions	|Integrate systems and run backend processes in response to events or schedules without provisioning or managing servers.|
+|||**Database**|
+|Relational database	RDS|	SQL Database, Database for MySQL, Database for PostgreSQL	| Managed relational database service where resiliency, scale, and maintenance are primarily handled by the platform.|
+| NoSQL / Document	DynamoDB , SimpleDB , Amazon DocumentDB |	Cosmos DB	| A globally distributed, multi-model database that natively supports multiple data models: key-value, documents, graphs, and columnar.|
+| Caching	ElastiCache	| Cache for Redis	| An in-memory–based, distributed caching service that provides a high-performance store typically used to offload nontransactional work from a database.|
+| Database migration	Database Migration Service	|Database Migration Service	|Migration of database schema and data from one database format to a specific database technology in the cloud.|
 |||**Containers and container orchestrators**|
 |Elastic Container Service (ECS) Fargate |	Container Instances	|Azure Container Instances is the fastest and simplest way to run a container in Azure, without having to provision any virtual machines or adopt a higher-level orchestration service.|
 |Elastic Container Registry	|Container Registry	|Allows customers to store Docker formatted images. Used to create all types of container deployments on Azure.|
