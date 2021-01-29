@@ -2,6 +2,11 @@
 
 |  AWS 	| AZURE	| Description |   	
 |:-:  |:-:  |:-:  |
+|||**Analytics and visualization**|
+|Kinesis Analytics	| Stream Analytics , Azure Data Explorer, Data Lake Analytics| Data Lake Store	Storage and analysis platforms that create insights from large quantities of data, or data that originates from many sources.|
+|QuickSight|Power BI |Business intelligence tools that build visualizations, perform ad hoc analysis, and develop business insights from data.|
+|CloudSearch	|Cognitive Search	|Delivers full-text search and related search analytics and capabilities.|
+|Athena	|Data Lake Analytics|	Provides a serverless interactive query service that uses standard SQL for analyzing databases.|
 |||**Data warehouse**|
 |Redshift	|Synapse Analytics	|Cloud-based Enterprise Data Warehouse (EDW) that uses Massively Parallel Processing (MPP) to quickly run complex queries across petabytes of data.|
 |Lake Formation	|Data Share|	A simple and safe service for sharing big data|
