@@ -50,6 +50,12 @@
 |Data Pipeline, Glue|	Data Factory	|Processes and moves data between different compute and storage services, as well as on-premises data sources at specified intervals. Create, schedule, orchestrate, and manage data pipelines.|
 |Glue	|Data Catalog	|A fully managed service that serves as a system of registration and system of discovery for enterprise data sources|
 |Dynamo DB| Table Storage, Cosmos DB |	NoSQL key-value store for rapid development using massive semi-structured datasets.|
+|||**Mobile services**|
+| Mobile Hub	|App Center , Xamarin Apps|	Provides backend mobile services for rapid development of mobile solutions, identity management, data synchronization, and storage and notifications across devices.|
+|Mobile SDK	|App Center	|Provides the technology to rapidly build cross-platform and native apps for mobile devices.|
+|Cognito	|App Center	|Provides authentication capabilities for mobile applications.|
+|Device Farm	|App Center	|Provides services to support testing mobile applications.|
+|Mobile Analytics	|App Center|	Supports monitoring, and feedback collection for the debugging and analysis of a mobile application service quality.|
 |||**Marketplace**|
 |AWS Marketplace |	Azure Marketplace |	Easy-to-deploy and automatically configured third-party applications, including single virtual machine or multiple virtual machine solutions.|
 |||**AI and machine learning**|
