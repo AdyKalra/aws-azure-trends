@@ -2,6 +2,12 @@
 
 |  AWS 	| AZURE	| Description |   	
 |:-:  |:-:  |:-:  |
+|||**Compute - Virtual servers**|
+|Elastic Compute Cloud (EC2) Instances|	Virtual Machines	|Virtual servers allow users to deploy, manage, and maintain OS and server software. Instance types provide combinations of CPU/RAM. Users pay for what they use with the flexibility to change sizes.|
+|Batch	|Batch|	Run large-scale parallel and high-performance computing applications efficiently in the cloud.|
+|Auto Scaling	|Virtual Machine Scale Sets	|Allows you to automatically change the number of VM instances. You set defined metric and thresholds that determine if the platform adds or removes instances.|
+|VMware Cloud on AWS	|Azure VMware Solution	|Seamlessly move VMware-based workloads from your datacenter to Azure and integrate your VMware environment with Azure. Keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services. Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.|
+|Parallel Cluster|	CycleCloud	|Create, manage, operate, and optimize HPC and big compute clusters of any scale|
 |||**Analytics and visualization**|
 |Kinesis Analytics	| Stream Analytics , Azure Data Explorer, Data Lake Analytics| Data Lake Store	Storage and analysis platforms that create insights from large quantities of data, or data that originates from many sources.|
 |QuickSight|Power BI |Business intelligence tools that build visualizations, perform ad hoc analysis, and develop business insights from data.|
