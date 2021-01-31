@@ -56,6 +56,9 @@
 |Cognito	|App Center	|Provides authentication capabilities for mobile applications.|
 |Device Farm	|App Center	|Provides services to support testing mobile applications.|
 |Mobile Analytics	|App Center|	Supports monitoring, and feedback collection for the debugging and analysis of a mobile application service quality.|
+|||**Firewall**|
+| Web Application Firewall	| Web Application Firewall	| A firewall that protects web applications from common web exploits.|
+|Web Application Firewall	|Firewall	|Provides inbound protection for non-HTTP/S protocols, outbound network-level protection for all ports and protocols, and application-level protection for outbound HTTP/S.|
 |||**Networking**|
 |Cloud virtual networking	- Virtual Private Cloud (VPC)|	Virtual Network|	Provides an isolated, private environment in the cloud. Users have control over their virtual networking environment, including selection of their own IP address range, creation of subnets, and configuration of route tables and network gateways.|
 |Cross-premises connectivity	- VPN Gateway|	VPN Gateway	|Connects Azure virtual networks to other Azure virtual networks, or customer on-premises networks (Site To Site). Allows end users to connect to Azure services through VPN tunneling (Point To Site).|
