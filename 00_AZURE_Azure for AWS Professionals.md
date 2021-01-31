@@ -38,6 +38,14 @@
 | NoSQL / Document	DynamoDB , SimpleDB , Amazon DocumentDB |	Cosmos DB	| A globally distributed, multi-model database that natively supports multiple data models: key-value, documents, graphs, and columnar.|
 | Caching	ElastiCache	| Cache for Redis	| An in-memory–based, distributed caching service that provides a high-performance store typically used to offload nontransactional work from a database.|
 | Database migration	Database Migration Service	|Database Migration Service	|Migration of database schema and data from one database format to a specific database technology in the cloud.|
+|||**Miscellaneous**|
+| Backend process logic	- Step Functions |	Logic Apps	|Cloud technology to build distributed applications using out-of-the-box connectors to reduce integration challenges. Connect apps, data and devices on-premises or in the cloud.|
+| Enterprise application services	- WorkMail, WorkDocs |	Microsoft 365|	Fully integrated Cloud service providing communications, email, document management in the cloud and available on a wide variety of devices.|
+|Gaming	- GameLift, GameSparks	|PlayFab	|Managed services for hosting dedicated game servers.|
+|Media transcoding-	Elastic Transcoder	|Media Services|	Services that offer broadcast-quality video streaming services, including various transcoding technologies.|
+|Workflow	-Simple Workflow Service (SWF)	|Logic Apps	|Serverless technology for connecting apps, data and devices anywhere, whether on-premises or in the cloud for large ecosystems of SaaS and cloud-based connectors.|
+|Hybrid	- Outposts	|Stack	Azure |Stack is a hybrid cloud platform that enables you to run Azure services in your company's or service provider's datacenter. As a developer, you can build apps on Azure Stack. You can then deploy them to either Azure Stack or Azure, or you can build truly hybrid apps that take advantage of connectivity between an Azure Stack cloud and Azure.|
+| Media - 	Elemental MediaConvert	|Media Services|	Cloud-based media workflow platform to index, package, protect, and stream video at scale.|
 |||**Messaging and eventing**|
 |Simple Queue Service (SQS)	|Queue Storage|	Provides a managed message queueing service for communicating between decoupled application components.|
 |Simple Queue Service (SQS)	|Service Bus	|Supports a set of cloud-based, message-oriented middleware technologies including reliable message queuing and durable publish/subscribe messaging.|
