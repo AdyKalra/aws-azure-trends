@@ -10,6 +10,8 @@
 |Parallel Cluster|	CycleCloud	|Create, manage, operate, and optimize HPC and big compute clusters of any scale|
 |||**Object storage**|
 | Simple Storage Services (S3)	| Blob storage|	Object storage service, for use cases including cloud applications, content distribution, backup, archiving, disaster recovery, and big data analytics.|
+|||**Virtual server disks**|
+| Elastic Block Store (EBS)	|managed disks	|SSD storage optimized for I/O intensive read/write operations. For use as high-performance Azure virtual machine storage.|
 |||**Serverless**|
 |Lambda	|Functions	|Integrate systems and run backend processes in response to events or schedules without provisioning or managing servers.|
 |||**Database**|
