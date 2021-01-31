@@ -18,6 +18,12 @@
 | S3 Infrequent Access (IA)|	Storage cool tier	| Cool storage is a lower-cost tier for storing data that is infrequently accessed and long-lived.|
 | S3 Glacier, Deep Archive|	Storage archive access tier	|Archive storage has the lowest storage cost and higher data retrieval costs compared to hot and cool storage.|
 |Backup|	Backup	|Back up and recover files and folders from the cloud, and provide offsite protection against data loss.|
+|||**Hybrid storage**|
+| Storage Gateway	| StorSimple	|Integrates on-premises IT environments with cloud storage. Automates data management and storage, plus supports disaster recovery.|
+|DataSync	|File Sync	|Azure Files can be deployed in two main ways: by directly mounting the serverless Azure file shares or by caching Azure file shares on-premises using Azure File Sync.|
+|||**Bulk data transfer**|
+| Import/Export Disk	|Import/Export|	A data transport solution that uses secure disks and appliances to transfer large amounts of data. Also offers data protection during transit.|
+|Import/Export Snowball, Snowball Edge, Snowmobile	|Data Box	|Petabyte- to exabyte-scale data transport solution that uses secure data storage devices to transfer large amounts of data to and from Azure.|
 |||**Serverless**|
 |Lambda	|Functions	|Integrate systems and run backend processes in response to events or schedules without provisioning or managing servers.|
 |||**Database**|
