@@ -76,6 +76,12 @@
 |Cognito	|Azure Active Directory |B2C	A highly available, global, identity management service for consumer-facing applications that scales to hundreds of millions of identities.|
 |Organizations	|Policy	Azure |Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service level agreements.|
 |Organizations	|Management Groups	|Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale, no matter what type of subscriptions you have.|
+|||**Security**|
+| Inspector |	Security Center |	An automated security assessment service that improves the security and compliance of applications. Automatically assess applications for vulnerabilities or deviations from best practices.|
+| Certificate Manager	| App Service Certificates available on the Portal|	Service that allows customers to create, manage, and consume certificates seamlessly in the cloud.|
+|GuardDuty	|Advanced Threat Protection	|Detect and investigate advanced attacks on-premises and in the cloud.|
+|Artifact|	Service Trust Portal	|Provides access to audit reports, compliance guides, and trust documents from across cloud services.|
+|Shield|	DDos Protection Service	|Provides cloud services with protection from distributed denial of services (DDoS) attacks.|
 |||**Encryption**|
 | Server-side encryption with Amazon S3 Key Management Service	| Azure Storage Service Encryption	|Helps you protect and safeguard your data and meet your organizational security and compliance commitments.|
 |Key Management Service (KMS), Cloud HSM	| Key Vault	| Provides security solution and works with other services by providing a way to manage, create, and control encryption keys stored in hardware security modules (HSM).|
