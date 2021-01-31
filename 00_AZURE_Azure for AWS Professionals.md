@@ -14,6 +14,10 @@
 | Elastic Block Store (EBS)	|managed disks	|SSD storage optimized for I/O intensive read/write operations. For use as high-performance Azure virtual machine storage.|
 |||**Shared files**|
 | Elastic File System	|Files	|Provides a simple interface to create and configure file systems quickly, and share common files. Can be used with traditional protocols that access files over a network.|
+|||**Archiving and backup**|
+| S3 Infrequent Access (IA)|	Storage cool tier	| Cool storage is a lower-cost tier for storing data that is infrequently accessed and long-lived.|
+| S3 Glacier, Deep Archive|	Storage archive access tier	|Archive storage has the lowest storage cost and higher data retrieval costs compared to hot and cool storage.|
+|Backup|	Backup	|Back up and recover files and folders from the cloud, and provide offsite protection against data loss.|
 |||**Serverless**|
 |Lambda	|Functions	|Integrate systems and run backend processes in response to events or schedules without provisioning or managing servers.|
 |||**Database**|
