@@ -26,6 +26,13 @@
 |Import/Export Snowball, Snowball Edge, Snowmobile	|Data Box	|Petabyte- to exabyte-scale data transport solution that uses secure data storage devices to transfer large amounts of data to and from Azure.|
 |||**Serverless**|
 |Lambda	|Functions	|Integrate systems and run backend processes in response to events or schedules without provisioning or managing servers.|
+|||**Web applications**|
+| Elastic Beanstalk	|App Service	|Managed hosting platform providing easy to use services for deploying and scaling web applications and services.|
+|API Gateway|	API Management	|A turnkey solution for publishing APIs to external and internal consumers.|
+|CloudFront	|Content Delivery Network	|A global content delivery network that delivers audio, video, applications, images, and other files.|
+|Global Accelerator	|Front Door	|Easily join your distributed microservices architectures into a single global application using HTTP load balancing and path-based routing rules. Automate turning up new regions and scale-out with API-driven global actions, and independent fault-tolerance to your back end microservices in Azure-or anywhere.|
+|Global Accelerator	|Cross-regional load balancer	|Distribute and load balance traffic across multiple Azure regions via a single, static, global anycast public IP address.|
+|LightSail|	App Service	|Build, deploy, and scale web apps on a fully managed platform.|
 |||**Database**|
 |Relational database	RDS|	SQL Database, Database for MySQL, Database for PostgreSQL	| Managed relational database service where resiliency, scale, and maintenance are primarily handled by the platform.|
 | NoSQL / Document	DynamoDB , SimpleDB , Amazon DocumentDB |	Cosmos DB	| A globally distributed, multi-model database that natively supports multiple data models: key-value, documents, graphs, and columnar.|
