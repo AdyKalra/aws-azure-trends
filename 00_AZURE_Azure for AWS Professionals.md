@@ -73,6 +73,9 @@
 |Cognito	|Azure Active Directory |B2C	A highly available, global, identity management service for consumer-facing applications that scales to hundreds of millions of identities.|
 |Organizations	|Policy	Azure |Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service level agreements.|
 |Organizations	|Management Groups	|Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale, no matter what type of subscriptions you have.|
+|||**Encryption**|
+| Server-side encryption with Amazon S3 Key Management Service	| Azure Storage Service Encryption	|Helps you protect and safeguard your data and meet your organizational security and compliance commitments.|
+|Key Management Service (KMS), Cloud HSM	| Key Vault	| Provides security solution and works with other services by providing a way to manage, create, and control encryption keys stored in hardware security modules (HSM).|
 |||**Marketplace**|
 |AWS Marketplace |	Azure Marketplace |	Easy-to-deploy and automatically configured third-party applications, including single virtual machine or multiple virtual machine solutions.|
 |||**AI and machine learning**|
