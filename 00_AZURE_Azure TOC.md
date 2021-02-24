@@ -54,3 +54,28 @@ These services all share several common characteristics:
 * Scalable with virtually unlimited storage.
 * Managed, handling maintenance and any critical problems for you.
 * Accessible from anywhere in the world over HTTP or HTTPS.
+
+## Mobile
+With Azure, developers can create mobile back-end services for iOS, Android, and Windows apps quickly and easily. Features that used to take time and increase project risks, such as adding corporate sign-in and then connecting to on-premises resources such as SAP, Oracle, SQL Server, and SharePoint, are now simple to include.
+
+Other features of this service include:
+
+* Offline data synchronization.
+* Connectivity to on-premises data.
+* Broadcasting push notifications.
+* Autoscaling to match business needs.
+
+## Databases
+Azure provides multiple database services to store a wide variety of data types and volumes. And with global connectivity, this data is available to users instantly.
+
+|Service name	|Service function|
+|:-:  |:-:  |
+|Azure Cosmos DB	|Globally distributed database that supports NoSQL options.|
+|Azure SQL Database	|Fully managed relational database with auto-scale, integral intelligence, and robust security.|
+|Azure Database for MySQL	|Fully managed and scalable MySQL relational database with high availability and security.|
+|Azure Database for PostgreSQL	|Fully managed and scalable PostgreSQL relational database with high availability and security.|
+| SQL Server on Azure Virtual Machines	| Service that hosts enterprise SQL Server apps in the cloud.|
+| Azure Synapse Analytics	| Fully managed data warehouse with integral security at every level of scale at no extra cost.|
+| Azure Database Migration Service	| Service that migrates databases to the cloud with no application code changes.|
+| Azure Cache for Redis	| Fully managed service caches frequently used and static data to reduce data and application latency.|
+| Azure Database for MariaDB	| Fully managed and scalable MariaDB relational database with high availability and security.
