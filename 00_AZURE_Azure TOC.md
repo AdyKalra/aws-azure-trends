@@ -79,3 +79,15 @@ Azure provides multiple database services to store a wide variety of data types 
 | Azure Database Migration Service	| Service that migrates databases to the cloud with no application code changes.|
 | Azure Cache for Redis	| Fully managed service caches frequently used and static data to reduce data and application latency.|
 | Azure Database for MariaDB	| Fully managed and scalable MariaDB relational database with high availability and security.
+
+## Web
+Having a great web experience is critical in today's business world. Azure includes first-class support to build and host web apps and HTTP-based web services. The following Azure services are focused on web hosting.
+
+|Service name	|Service function|
+|:-:  |:-:  |
+| Azure App Service	|Quickly create powerful cloud web-based apps.|
+| Azure Notification Hubs |	Send push notifications to any platform from any back end.|
+| Azure API Management |	Publish APIs to developers, partners, and employees securely and at scale.|
+| Azure Cognitive Search	| Deploy this fully managed search as a service.|
+| Web Apps feature of Azure App Service	| Create and deploy mission-critical web apps at scale.|
+| Azure SignalR Service	| Add real-time web functionalities easily.
