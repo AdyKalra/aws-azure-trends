@@ -36,3 +36,21 @@ Here are some examples of networking services in Azure.
 | AZURE	| Description |
 |:-:  |:-:  |
 |[intro-to-azure-fundamentals](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/)|This module introduces you to the basics of cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.|
+
+## Storage
+Azure provides four main types of storage services.
+
+|Service name	|Service function|
+|:-:  |:-:  |
+|Azure Blob |storage	Storage service for very large objects, such as video files or bitmaps.|
+|Azure File storage	|File shares that can be accessed and managed like a file server.|
+|Azure Queue storage	|A data store for queuing and reliably delivering messages between applications.|
+|Azure Table storage	|Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design..|
+
+These services all share several common characteristics:
+
+* Durable and highly available with redundancy and replication.
+* Secure through automatic encryption and role-based access control.
+* Scalable with virtually unlimited storage.
+* Managed, handling maintenance and any critical problems for you.
+* Accessible from anywhere in the world over HTTP or HTTPS.
