@@ -1,1 +1,2 @@
 - [Request Units in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units)
+- [monthlyresources](https://github.com/microsoft/monthlyresources) - Use this repository to explore the latest content and code samples. Each month we will release best of content resources that relate to a particular theme. - Microsoft Developer Editorial team
