@@ -1,3 +1,3 @@
 - [Request Units in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units)
 - [monthlyresources](https://github.com/microsoft/monthlyresources) - Use this repository to explore the latest content and code samples. Each month we will release best of content resources that relate to a particular theme. - Microsoft Developer Editorial team
-- [Azure Arc-Enabled SQL](https://www.infoq.com/news/2021/07/azure-arc-enabled-sql/?utm_source=email&utm_medium=editorial&utm_campaign=SpecialNL&utm_content=09022021&forceSponsorshipId=0c079c92-b3b1-476a-a823-4b01de108ad7a)
+- [Azure Arc-Enabled SQL](https://www.infoq.com/news/2021/07/azure-arc-enabled-sql/?utm_source=email&utm_medium=editorial&utm_campaign=SpecialNL&utm_content=09022021&forceSponsorshipId=0c079c92-b3b1-476a-a823-4b01de108ad7a) - extends the Azure SQL instances to be hosted on an edge data center or in a multi-cloud environment.
