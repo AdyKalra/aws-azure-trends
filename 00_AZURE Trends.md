@@ -1,3 +1,8 @@
 - [Request Units in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units)
 - [monthlyresources](https://github.com/microsoft/monthlyresources) - Use this repository to explore the latest content and code samples. Each month we will release best of content resources that relate to a particular theme. - Microsoft Developer Editorial team
 - [Azure Arc-Enabled SQL](https://www.infoq.com/news/2021/07/azure-arc-enabled-sql/?utm_source=email&utm_medium=editorial&utm_campaign=SpecialNL&utm_content=09022021&forceSponsorshipId=0c079c92-b3b1-476a-a823-4b01de108ad7a) - extends the Azure SQL instances to be hosted on an edge data center or in a multi-cloud environment.
+- [APIM](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts) - API Management (APIM) is a way to create consistent and modern API gateways for existing back-end services.
+- [Azure Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) - is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services from each other, providing the following benefits:
+  - Load-balancing work across competing workers
+  - Safely routing and transferring data and control across service and application boundaries
+  - Coordinating transactional work that requires a high-degree of reliability
