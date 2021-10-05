@@ -141,3 +141,7 @@
 |CloudTrail	|Monitor|	Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.|
 |CloudWatch	|Application Insights	|Application Insights, is an extensible Application Performance Management (APM) service for developers and DevOps professionals.|
 |Cost Explorer	|Cost Management	|Optimize cloud costs while maximizing cloud potential.|
+
+
+![1633322113298](https://user-images.githubusercontent.com/8856857/136013428-c1780681-7038-4864-bfbf-2da17a5b0de3.jpeg)
+![1633322113427](https://user-images.githubusercontent.com/8856857/136013435-9e507813-be3a-44e9-8fb1-01e4e7185b74.jpeg)
